@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" role="img" aria-labelledby="title desc">
+  <title id="title">Hull Blinds Logo</title>
+  <desc id="desc">Hull Blinds logo with blue blind mark and dark text.</desc>
+  <rect width="900" height="330" fill="none"/>
+  <g transform="translate(70 63)">
+    <g fill="#0384F1">
+      <rect x="0" y="0" width="132" height="20" rx="0"/>
+      <rect x="0" y="38" width="103" height="20" rx="0"/>
+      <rect x="0" y="76" width="122" height="20" rx="0"/>
+      <rect x="0" y="114" width="83" height="20" rx="0"/>
+    </g>
+    <text x="170" y="72" fill="#303030" font-family="Montserrat, Arial, sans-serif" font-size="70" font-weight="800" letter-spacing="-2">Hull</text>
+    <text x="170" y="145" fill="#303030" font-family="Montserrat, Arial, sans-serif" font-size="70" font-weight="800" letter-spacing="-2">Blinds</text>
+  </g>
+</svg>

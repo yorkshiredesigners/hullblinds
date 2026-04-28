@@ -96,6 +96,7 @@
       }
 
       .site-nav {
+        position: relative;
         background: var(--white);
         border-bottom: 1px solid var(--line);
       }
@@ -171,6 +172,25 @@
         border: 2px solid var(--blue);
       }
 
+      .mobile-menu-toggle {
+        display: none;
+        width: 52px;
+        height: 46px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6px;
+        border: 0;
+        background: var(--blue);
+        cursor: pointer;
+      }
+
+      .mobile-menu-toggle span {
+        width: 25px;
+        height: 3px;
+        background: var(--white);
+      }
+
       .hero {
         display: grid;
         grid-template-columns: 51% 49%;
@@ -214,7 +234,7 @@
 
       .hero-actions {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         gap: 26px;
         margin-top: 32px;
       }
@@ -248,18 +268,6 @@
         background:
           linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)),
           url("images/blinds hull.jpg") center/cover no-repeat;
-      }
-
-      .phone-badge {
-        position: absolute;
-        top: 0;
-        right: 70px;
-        background: var(--blue);
-        color: var(--white);
-        padding: 13px 28px;
-        font-size: 17px;
-        font-weight: 700;
-        text-decoration: none;
       }
 
       .benefits {
@@ -440,7 +448,7 @@
         min-height: 520px;
         background:
           linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)),
-          url("images/blinds hull.jpg") center/cover no-repeat;
+          url("https://images.unsplash.com/photo-1556020685-ae41abfc9365?auto=format&fit=crop&w=1200&q=85") center/cover no-repeat;
       }
 
       .quote-cta {
@@ -486,6 +494,99 @@
         border-color: var(--white);
         background: var(--white);
         color: var(--blue-dark);
+      }
+
+      .blinds-grid-section {
+        background: var(--white);
+        padding: 76px 20px;
+        text-align: center;
+      }
+
+      .blinds-grid-section h2 {
+        margin: 0;
+        color: #24272b;
+        font-family: "Montserrat", sans-serif;
+        font-size: 38px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .blinds-grid-section > p {
+        margin: 12px auto 0;
+        max-width: 760px;
+        color: #555a60;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 1.55;
+      }
+
+      .section-rule {
+        width: 86px;
+        height: 4px;
+        margin: 28px auto 52px;
+        background: var(--blue);
+      }
+
+      .blinds-grid {
+        width: min(1120px, 100%);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 40px 34px;
+      }
+
+      .blind-card {
+        background: var(--blue);
+        border-bottom: 5px solid var(--blue);
+        text-align: center;
+      }
+
+      .blind-card-image {
+        min-height: 220px;
+        background:
+          linear-gradient(rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06)),
+          var(--card-image) center/cover no-repeat;
+      }
+
+      .blind-card-body {
+        padding: 24px 24px 28px;
+      }
+
+      .blind-card h3 {
+        margin: 0;
+        color: var(--white);
+        font-family: "Montserrat", sans-serif;
+        font-size: 21px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .blind-card p {
+        margin: 12px 0 0;
+        color: #e8f5ff;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 1.48;
+      }
+
+      .card-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        min-height: 42px;
+        padding: 11px 16px;
+        border: 2px solid var(--white);
+        color: var(--blue-dark);
+        background: var(--white);
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-decoration: none;
+        text-transform: uppercase;
       }
 
       .about {
@@ -576,27 +677,337 @@
         padding: 76px 20px;
       }
 
+      .work-section {
+        background: #f0f2f5;
+        padding: 76px 20px;
+        text-align: center;
+      }
+
+      .work-inner {
+        width: min(1120px, 100%);
+        margin: 0 auto;
+      }
+
+      .work-section h2 {
+        margin: 0;
+        color: var(--blue);
+        font-family: "Montserrat", sans-serif;
+        font-size: 38px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .work-section > .work-inner > p {
+        max-width: 720px;
+        margin: 14px auto 0;
+        color: #555a60;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 1.55;
+      }
+
+      .work-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 22px;
+        margin-top: 46px;
+      }
+
+      .work-step {
+        background: var(--white);
+        padding: 34px 24px;
+        border-top: 5px solid var(--blue);
+        box-shadow: 0 10px 22px rgba(20, 35, 55, 0.06);
+      }
+
+      .work-step svg {
+        width: 54px;
+        height: 54px;
+        stroke: var(--blue);
+        stroke-width: 1.8;
+        fill: none;
+      }
+
+      .work-step h3 {
+        margin: 20px 0 10px;
+        color: #24272b;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .work-step p {
+        margin: 0;
+        color: #555a60;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.5;
+      }
+
+      .contact-section {
+        background: var(--blue);
+        padding: 76px 20px;
+        color: var(--white);
+      }
+
+      .contact-inner {
+        width: min(1120px, 100%);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 0.82fr 1fr;
+        gap: 42px;
+        align-items: start;
+      }
+
+      .contact-form-wrap {
+        display: grid;
+        gap: 18px;
+      }
+
+      .contact-details h2 {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        font-size: 38px;
+        font-weight: 800;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+      }
+
+      .contact-details p {
+        margin: 16px 0 0;
+        color: #e8f5ff;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 1.6;
+      }
+
+      .contact-methods {
+        display: grid;
+        gap: 10px;
+        margin-top: 28px;
+        max-width: 720px;
+      }
+
+      .contact-method,
+      .opening-times {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--white);
+        font-size: 18px;
+        font-weight: 800;
+        text-decoration: none;
+        width: 100%;
+        min-height: 74px;
+        padding: 18px 26px;
+        background: rgba(255, 255, 255, 0.13);
+        border: 1px solid rgba(255, 255, 255, 0.24);
+      }
+
+      .contact-method svg,
+      .opening-times svg {
+        width: 26px;
+        height: 26px;
+        stroke: currentColor;
+        stroke-width: 2;
+        fill: none;
+        flex-shrink: 0;
+      }
+
+      .contact-form {
+        display: grid;
+        gap: 14px;
+        background: var(--white);
+        padding: 30px;
+      }
+
+      .contact-form label {
+        color: #33363b;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        margin-top: 7px;
+        border: 2px solid #d7dde4;
+        color: #33363b;
+        font: inherit;
+        padding: 12px;
+      }
+
+      .contact-form textarea {
+        min-height: 130px;
+        resize: vertical;
+      }
+
+      .contact-form button {
+        min-height: 48px;
+        border: 0;
+        background: var(--blue);
+        color: var(--white);
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .site-footer {
+        background: var(--white);
+        color: var(--text);
+        border-top: 1px solid var(--line);
+      }
+
+      .footer-inner {
+        width: min(1180px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 58px 0 48px;
+        display: grid;
+        grid-template-columns: 1.3fr 1fr 1fr 1.15fr;
+        gap: 34px;
+      }
+
+      .footer-brand {
+        max-width: 310px;
+      }
+
+      .footer-brand .brand {
+        display: inline-flex;
+      }
+
+      .footer-brand p {
+        margin: 20px 0 0;
+        color: #555a60;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.6;
+      }
+
+      .footer-col h3 {
+        margin: 0 0 18px;
+        color: var(--blue);
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .footer-links,
+      .footer-contact {
+        display: grid;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .footer-links a,
+      .footer-contact a,
+      .footer-contact span {
+        color: #44484e;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .footer-links a:hover,
+      .footer-contact a:hover {
+        color: var(--blue);
+      }
+
+      .footer-view-all {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 18px;
+        min-height: 40px;
+        padding: 10px 16px;
+        background: var(--blue);
+        color: var(--white);
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .footer-view-all:hover {
+        background: var(--blue-dark);
+        color: var(--white);
+      }
+
+      .footer-contact li {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .footer-contact svg {
+        width: 19px;
+        height: 19px;
+        margin-top: 2px;
+        stroke: var(--blue);
+        stroke-width: 2;
+        fill: none;
+        flex-shrink: 0;
+      }
+
+      .footer-bottom {
+        background: var(--blue);
+        padding: 14px 20px;
+        color: var(--white);
+        text-align: center;
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      .footer-bottom a {
+        color: var(--white);
+        text-decoration: none;
+      }
+
       .review-inner {
         width: min(1220px, 100%);
         margin: 0 auto;
-        display: grid;
-        grid-template-columns: 48% 52%;
-        gap: 48px;
-        align-items: center;
       }
 
-      .review-image {
-        min-height: 520px;
+      .review-header {
+        max-width: 760px;
+        margin: 0 auto 38px;
+        text-align: center;
+      }
+
+      .review-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px;
+      }
+
+      .review-item {
+        display: grid;
+        grid-template-rows: 360px 1fr;
+        background: var(--white);
+        box-shadow: 0 14px 30px rgba(15, 51, 84, 0.12);
+      }
+
+      .review-photo {
         background:
           linear-gradient(rgba(3, 132, 241, 0.08), rgba(3, 132, 241, 0.08)),
-          url("images/Owen blinds review") center/cover no-repeat;
-        border: 12px solid var(--white);
-        box-shadow: 0 16px 34px rgba(15, 51, 84, 0.16);
+          var(--review-image) center/cover no-repeat;
       }
 
-      .review-copy h2 {
+      .review-header h2 {
         margin: 0;
-        color: #24272b;
+        color: var(--blue);
         font-family: "Montserrat", sans-serif;
         font-size: 42px;
         font-weight: 800;
@@ -604,11 +1015,11 @@
         text-transform: uppercase;
       }
 
-      .review-copy h2 span {
+      .review-header h2 span {
         color: var(--blue);
       }
 
-      .review-copy > p {
+      .review-header p {
         margin: 18px 0 0;
         color: #555a60;
         font-size: 20px;
@@ -617,11 +1028,9 @@
       }
 
       .review-card {
-        margin-top: 34px;
         padding: 34px;
         background: var(--white);
         border-left: 6px solid var(--blue);
-        box-shadow: 0 14px 30px rgba(15, 51, 84, 0.12);
       }
 
       .stars {
@@ -647,9 +1056,240 @@
         font-weight: 800;
       }
 
+      .review-extra-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 30px;
+      }
+
+      .review-extra {
+        padding: 26px 24px;
+        background: var(--blue);
+        color: var(--white);
+        box-shadow: 0 12px 24px rgba(15, 51, 84, 0.12);
+      }
+
+      .review-extra .stars {
+        color: var(--white);
+        font-size: 19px;
+      }
+
+      .review-extra blockquote {
+        margin: 16px 0 0;
+        color: #eef8ff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.55;
+      }
+
+      .review-extra cite {
+        display: block;
+        margin-top: 18px;
+        color: var(--white);
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .locations-section {
+        background: var(--white);
+        padding: 76px 20px;
+        text-align: center;
+      }
+
+      .locations-inner {
+        width: min(1120px, 100%);
+        margin: 0 auto;
+      }
+
+      .locations-section h2 {
+        margin: 0;
+        color: var(--blue);
+        font-family: "Montserrat", sans-serif;
+        font-size: 38px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .locations-section p {
+        max-width: 720px;
+        margin: 14px auto 0;
+        color: #555a60;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 1.55;
+      }
+
+      .locations-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 42px;
+      }
+
+      .location-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        min-height: 74px;
+        padding: 22px 18px;
+        background: var(--blue);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        text-decoration: none;
+      }
+
+      .location-card strong {
+        color: var(--white);
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+      }
+
+      .location-card span {
+        color: #e8f5ff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .faq-section {
+        background: #f4f9ff;
+        padding: 76px 20px;
+      }
+
+      .faq-inner {
+        width: min(980px, 100%);
+        margin: 0 auto;
+      }
+
+      .faq-header {
+        max-width: 760px;
+        margin: 0 auto 38px;
+        text-align: center;
+      }
+
+      .faq-header h2 {
+        margin: 0;
+        color: var(--blue);
+        font-family: "Montserrat", sans-serif;
+        font-size: 38px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .faq-header p {
+        margin: 14px 0 0;
+        color: #555a60;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.55;
+      }
+
+      .faq-list {
+        display: grid;
+        gap: 14px;
+      }
+
+      .faq-item {
+        background: var(--white);
+        border-left: 5px solid var(--blue);
+        box-shadow: 0 12px 24px rgba(15, 51, 84, 0.08);
+      }
+
+      .faq-item summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 22px 24px;
+        color: #24272b;
+        font-family: "Montserrat", sans-serif;
+        font-size: 17px;
+        font-weight: 800;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        cursor: pointer;
+        list-style: none;
+      }
+
+      .faq-item summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .faq-item summary::after {
+        content: "+";
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        flex: 0 0 30px;
+        background: var(--blue);
+        color: var(--white);
+        font-size: 22px;
+        line-height: 1;
+      }
+
+      .faq-item[open] summary::after {
+        content: "-";
+      }
+
+      .faq-item p {
+        margin: 0;
+        padding: 0 24px 24px;
+        color: #555a60;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 1.6;
+      }
+
       @media (max-width: 1020px) {
         .menu {
           display: none;
+        }
+
+        .site-nav.menu-open .menu {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          z-index: 30;
+          display: grid;
+          gap: 0;
+          padding: 10px 20px 18px;
+          background: var(--white);
+          border-bottom: 1px solid var(--line);
+          box-shadow: 0 16px 30px rgba(15, 51, 84, 0.12);
+        }
+
+        .site-nav.menu-open .menu a {
+          padding: 16px 0;
+          border-bottom: 1px solid var(--line);
+        }
+
+        .site-nav.menu-open .menu a.active {
+          border-bottom: 1px solid var(--line);
+        }
+
+        .site-nav.menu-open .menu .nav-call {
+          justify-content: center;
+          margin-top: 12px;
+          padding: 14px 18px;
+          border-bottom: 2px solid var(--blue);
+        }
+
+        .mobile-menu-toggle {
+          display: inline-flex;
         }
 
         .hero {
@@ -672,12 +1312,40 @@
           grid-template-columns: 1fr;
         }
 
-        .review-inner {
+        .blinds-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .review-grid {
           grid-template-columns: 1fr;
         }
 
-        .review-image {
-          min-height: 420px;
+        .review-extra-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .work-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .contact-inner {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-inner {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .review-item {
+          grid-template-rows: 340px 1fr;
+        }
+
+        .locations-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .faq-inner {
+          width: min(760px, 100%);
         }
 
         .benefit-grid {
@@ -686,27 +1354,74 @@
       }
 
       @media (max-width: 640px) {
+        .utility {
+          font-size: 11px;
+          letter-spacing: 0.03em;
+        }
+
         .utility-inner {
-          align-items: flex-start;
+          width: 100%;
+          align-items: center;
           grid-template-columns: 1fr;
-          padding: 9px 0;
+          gap: 0;
+          min-height: 46px;
+          padding: 11px 20px;
+          text-align: center;
+        }
+
+        .utility-inner > span:first-child {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--white);
+          font-family: "Montserrat", sans-serif;
+          font-size: 13px;
+          font-weight: 800;
+          letter-spacing: 0.05em;
         }
 
         .utility-tagline {
-          text-align: left;
-          white-space: normal;
+          display: none;
         }
 
         .utility-contact {
-          justify-content: flex-start;
+          display: none;
+        }
+
+        .utility-pill {
+          justify-content: center;
+          min-height: 42px;
+          padding: 9px 12px;
         }
 
         .nav-inner {
-          min-height: 72px;
+          width: 100%;
+          min-height: 88px;
+          padding: 0 20px;
+          gap: 16px;
+        }
+
+        .brand-mark {
+          width: 50px;
+          height: 38px;
+          gap: 5px;
+        }
+
+        .brand-mark span:nth-child(1) { width: 50px; height: 7px; }
+        .brand-mark span:nth-child(2) { width: 39px; height: 7px; }
+        .brand-mark span:nth-child(3) { width: 47px; height: 7px; }
+        .brand-mark span:nth-child(4) { width: 32px; height: 7px; }
+
+        .brand-name {
+          font-size: 26px;
         }
 
         .hero-copy {
-          padding: 42px 20px;
+          padding: 54px 20px 60px;
+        }
+
+        .hero-image {
+          display: none;
         }
 
         .hero h1 {
@@ -718,15 +1433,12 @@
         }
 
         .hero-actions {
+          flex-wrap: wrap;
           gap: 12px;
         }
 
         .btn {
           width: 100%;
-        }
-
-        .phone-badge {
-          right: 0;
         }
 
         .benefit-grid {
@@ -765,6 +1477,39 @@
           font-size: 16px;
         }
 
+        .blinds-grid-section {
+          padding: 48px 18px;
+        }
+
+        .blinds-grid-section h2 {
+          font-size: 30px;
+        }
+
+        .blinds-grid-section > p {
+          font-size: 16px;
+        }
+
+        .section-rule {
+          margin-bottom: 34px;
+        }
+
+        .blinds-grid {
+          grid-template-columns: 1fr;
+          gap: 26px;
+        }
+
+        .blind-card-image {
+          min-height: 210px;
+        }
+
+        .blind-card h3 {
+          font-size: 18px;
+        }
+
+        .blind-card p {
+          font-size: 16px;
+        }
+
         .about {
           padding: 48px 18px;
         }
@@ -790,16 +1535,67 @@
           padding: 48px 18px;
         }
 
-        .review-image {
-          min-height: 300px;
-          border-width: 8px;
+        .work-section {
+          padding: 48px 18px;
         }
 
-        .review-copy h2 {
+        .work-section h2 {
           font-size: 30px;
         }
 
-        .review-copy > p,
+        .work-section > .work-inner > p {
+          font-size: 16px;
+        }
+
+        .work-grid {
+          grid-template-columns: 1fr;
+          gap: 18px;
+        }
+
+        .work-step {
+          padding: 28px 22px;
+        }
+
+        .contact-section {
+          padding: 48px 18px;
+        }
+
+        .contact-details h2 {
+          font-size: 30px;
+        }
+
+        .contact-details p,
+        .contact-method {
+          font-size: 16px;
+        }
+
+        .contact-form {
+          padding: 22px;
+        }
+
+        .footer-inner {
+          grid-template-columns: 1fr;
+          padding: 44px 0 38px;
+        }
+
+        .footer-brand {
+          max-width: none;
+        }
+
+        .footer-bottom {
+          font-size: 13px;
+          line-height: 1.5;
+        }
+
+        .review-item {
+          grid-template-rows: 260px 1fr;
+        }
+
+        .review-header h2 {
+          font-size: 30px;
+        }
+
+        .review-header p,
         .review-card blockquote {
           font-size: 16px;
         }
@@ -807,13 +1603,55 @@
         .review-card {
           padding: 26px 22px;
         }
+
+        .review-extra-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .locations-section {
+          padding: 48px 18px;
+        }
+
+        .locations-section h2 {
+          font-size: 30px;
+        }
+
+        .locations-section p {
+          font-size: 16px;
+        }
+
+        .locations-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .faq-section {
+          padding: 48px 18px;
+        }
+
+        .faq-header h2 {
+          font-size: 30px;
+        }
+
+        .faq-header p,
+        .faq-item p {
+          font-size: 16px;
+        }
+
+        .faq-item summary {
+          padding: 18px;
+          font-size: 15px;
+        }
+
+        .faq-item p {
+          padding: 0 18px 20px;
+        }
       }
     </style>
   </head>
   <body>
     <header class="utility">
       <div class="utility-inner">
-        <span>Open today 9:00 AM - 5:30 PM</span>
+        <span>Open Mon-Sun 8:00 AM - 10:00 PM</span>
         <span class="utility-tagline">Blinds Specialists Hull &amp; East Yorkshire</span>
         <span class="utility-contact">
           <a class="utility-pill" href="tel:01482236734">
@@ -821,13 +1659,6 @@
               <path d="M5.8 3.8h2.8l1.7 4.2-1.7 1.7a15.3 15.3 0 0 0 5.8 5.8l1.7-1.7 4.2 1.7v2.8c0 .9-.7 1.6-1.6 1.6C10.8 20 4 13.2 4 5.4c0-.9.7-1.6 1.8-1.6z"></path>
             </svg>
             01482 236734
-          </a>
-          <a class="utility-pill" href="mailto:shop@hullblinds.co.uk">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M4 6.5h16v11H4z"></path>
-              <path d="m4 7 8 6 8-6"></path>
-            </svg>
-            shop@hullblinds.co.uk
           </a>
         </span>
       </div>
@@ -844,12 +1675,18 @@
           </span>
           <span class="brand-name">Hull<br />Blinds</span>
         </a>
+        <button class="mobile-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <div class="menu">
-          <a class="active" href="#">Home</a>
-          <a href="#">Blinds For Your Home</a>
-          <a href="#">Blinds For Your Office</a>
-          <a href="#">Window Shutters</a>
-          <a href="#">Gallery</a>
+          <a class="active" href="#">Venetian Blinds</a>
+          <a href="#">Roller Blinds</a>
+          <a href="#">Roman Blinds</a>
+          <a href="#">Vertical Blinds</a>
+          <a href="#">Shutters</a>
+          <a href="#">Perfect Fit Blinds</a>
           <a class="nav-call" href="tel:01482236734">01482 236734</a>
         </div>
       </div>
@@ -872,9 +1709,7 @@
             </div>
           </div>
         </div>
-        <div class="hero-image">
-          <a class="phone-badge" href="tel:01482236734">01482 236734</a>
-        </div>
+        <div class="hero-image"></div>
       </section>
 
       <section class="benefits" aria-label="Hull Blinds benefits">
@@ -982,27 +1817,6 @@
         </div>
       </section>
 
-      <section class="review-section" aria-label="Hull Blinds customer review">
-        <div class="review-inner">
-          <div class="review-image" aria-label="Fitted blinds installed for Owen McConaghy in Cottingham"></div>
-          <div class="review-copy">
-            <h2>Real Homes. <span>Real Reviews.</span></h2>
-            <p>
-              We are proud to help local customers transform their homes with fast, friendly service and made-to-measure
-              blinds fitted properly.
-            </p>
-            <div class="review-card">
-              <div class="stars" aria-label="5 star review">★★★★★</div>
-              <blockquote>
-                “Brendan was absolutely amazing. Gave him a call and he popped round the day after and within a week
-                our full house had blinds. Highly recommend.”
-              </blockquote>
-              <cite>Owen McConaghy, Cottingham</cite>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="quote-cta" aria-label="Contact Hull Blinds for a free quote">
         <div class="quote-card">
           <div>
@@ -1015,8 +1829,486 @@
           <a class="btn" href="tel:01482236734">Call 01482 236734</a>
         </div>
       </section>
+
+      <section class="blinds-grid-section" aria-label="Our blinds">
+        <h2>All Blinds</h2>
+        <p>Here at Hull Blinds we supply and install a wide range of made-to-measure blinds for homes and businesses.</p>
+        <div class="section-rule"></div>
+
+        <div class="blinds-grid">
+          <article class="blind-card">
+            <div class="blind-card-image" style="--card-image: url('https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="blind-card-body">
+              <h3>Wooden Blinds</h3>
+              <p>A wide variety of quality wood venetian blinds in a range of colours and finishes.</p>
+              <a class="card-link" href="#">Find Out More</a>
+            </div>
+          </article>
+          <article class="blind-card">
+            <div class="blind-card-image" style="--card-image: url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="blind-card-body">
+              <h3>Roller Blinds</h3>
+              <p>A range of roller blinds and blackout roller blinds to suit all situations.</p>
+              <a class="card-link" href="#">Find Out More</a>
+            </div>
+          </article>
+          <article class="blind-card">
+            <div class="blind-card-image" style="--card-image: url('https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="blind-card-body">
+              <h3>Roman Blinds</h3>
+              <p>A wide range of roman blinds to meet different price and quality requirements.</p>
+              <a class="card-link" href="#">Find Out More</a>
+            </div>
+          </article>
+          <article class="blind-card">
+            <div class="blind-card-image" style="--card-image: url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="blind-card-body">
+              <h3>Perfect Fit Blinds</h3>
+              <p>Perfect fit blinds require no drilling and are a neat option for modern windows.</p>
+              <a class="card-link" href="#">Find Out More</a>
+            </div>
+          </article>
+          <article class="blind-card">
+            <div class="blind-card-image" style="--card-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="blind-card-body">
+              <h3>Vertical Blinds</h3>
+              <p>Stylish vertical blinds offer a practical solution for larger windows and doors.</p>
+              <a class="card-link" href="#">Find Out More</a>
+            </div>
+          </article>
+          <article class="blind-card">
+            <div class="blind-card-image" style="--card-image: url('https://images.unsplash.com/photo-1556020685-ae41abfc9365?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="blind-card-body">
+              <h3>Venetian Blinds</h3>
+              <p>A comprehensive range of venetian blinds in a variety of colours and patterns.</p>
+              <a class="card-link" href="#">Find Out More</a>
+            </div>
+          </article>
+          <article class="blind-card">
+            <div class="blind-card-image" style="--card-image: url('https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="blind-card-body">
+              <h3>Shutters</h3>
+              <p>A range of shutters to fit your specific window measurements and home style.</p>
+              <a class="card-link" href="#">Find Out More</a>
+            </div>
+          </article>
+          <article class="blind-card">
+            <div class="blind-card-image" style="--card-image: url('https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="blind-card-body">
+              <h3>Motorised Blinds</h3>
+              <p>Quality motorised blinds supplied and fitted for convenience and comfort.</p>
+              <a class="card-link" href="#">Find Out More</a>
+            </div>
+          </article>
+          <article class="blind-card">
+            <div class="blind-card-image" style="--card-image: url('https://images.unsplash.com/photo-1600607688066-890987f18a86?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="blind-card-body">
+              <h3>Day &amp; Night Blinds</h3>
+              <p>Create an impact with modern day and night blinds for flexible light control.</p>
+              <a class="card-link" href="#">Find Out More</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="work-section" aria-label="How Hull Blinds works">
+        <div class="work-inner">
+          <h2>How We Work</h2>
+          <p>From your first call to the final fit, we keep the process simple, friendly and professional.</p>
+
+          <div class="work-grid">
+            <article class="work-step">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5.8 3.8h2.8l1.7 4.2-1.7 1.7a15.3 15.3 0 0 0 5.8 5.8l1.7-1.7 4.2 1.7v2.8c0 .9-.7 1.6-1.6 1.6C10.8 20 4 13.2 4 5.4c0-.9.7-1.6 1.8-1.6z"></path>
+              </svg>
+              <h3>1. Get In Touch</h3>
+              <p>Call or message us and tell us what rooms, styles or blinds you are looking for.</p>
+            </article>
+
+            <article class="work-step">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 4h16v16H4z"></path>
+                <path d="M8 2v4"></path>
+                <path d="M16 2v4"></path>
+                <path d="M4 9h16"></path>
+              </svg>
+              <h3>2. Arrange A Consultation</h3>
+              <p>We book a convenient time to discuss options, fabrics, finishes and your budget.</p>
+            </article>
+
+            <article class="work-step">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 11 12 4l9 7"></path>
+                <path d="M5 10v10h14V10"></path>
+                <path d="M9 20v-5h6v5"></path>
+              </svg>
+              <h3>3. We Visit You</h3>
+              <p>Brendan measures carefully, brings advice, and helps you choose the right product.</p>
+            </article>
+
+            <article class="work-step">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 3.5h12v17H6z"></path>
+                <path d="M8.5 8h7"></path>
+                <path d="M8.5 12h7"></path>
+                <path d="M8.5 16h4"></path>
+              </svg>
+              <h3>4. Free Quote</h3>
+              <p>You receive a clear no-obligation quote, then we arrange fitting when you are ready.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="review-section" aria-label="Hull Blinds customer review">
+        <div class="review-inner">
+          <div class="review-header">
+            <h2>Our Reviews</h2>
+            <p>
+              We are proud to help local customers transform their homes with fast, friendly service and made-to-measure
+              blinds fitted properly.
+            </p>
+          </div>
+
+          <div class="review-grid">
+            <article class="review-item">
+              <div
+                class="review-photo"
+                style="--review-image: url('images/Owen blinds review')"
+                aria-label="Fitted blinds installed for Owen McConaghy in Cottingham"
+              ></div>
+              <div class="review-card">
+                <div class="stars" aria-label="5 star review">★★★★★</div>
+                <blockquote>
+                  “Brendan was absolutely amazing. Gave him a call and he popped round the day after and within a week
+                  our full house had blinds. Highly recommend.”
+                </blockquote>
+                <cite>Owen McConaghy, Cottingham</cite>
+              </div>
+            </article>
+
+            <article class="review-item">
+              <div
+                class="review-photo"
+                style="--review-image: url('images/mathew blinds review.png')"
+                aria-label="Fitted blinds installed for Mathew Atkin in Kingston Upon Hull"
+              ></div>
+              <div class="review-card">
+                <div class="stars" aria-label="5 star review">★★★★★</div>
+                <blockquote>
+                  “Brendon at Hull Blinds Limited is a very professional man who makes you feel at ease. He puts 100%
+                  dedication into his work and has what we all want: attention to detail.”
+                </blockquote>
+                <cite>Mathew Atkin, Kingston Upon Hull</cite>
+              </div>
+            </article>
+          </div>
+
+          <div class="review-extra-grid" aria-label="More Hull Blinds customer reviews">
+            <article class="review-extra">
+              <div class="stars" aria-label="5 star review">★★★★★</div>
+              <blockquote>
+                “From measuring to fitting took 5 days. Excellent service, the best price, and I love my new wooden
+                Venetian blinds. Recommend 100%.”
+              </blockquote>
+              <cite>Paige Eggleton</cite>
+            </article>
+
+            <article class="review-extra">
+              <div class="stars" aria-label="5 star review">★★★★★</div>
+              <blockquote>
+                “Brilliant work, highly recommend. The work was done fast and the quality of the blinds is amazing. They
+                made my home look much cosier.”
+              </blockquote>
+              <cite>Jazzmin Ullah</cite>
+            </article>
+
+            <article class="review-extra">
+              <div class="stars" aria-label="5 star review">★★★★★</div>
+              <blockquote>
+                “Fast, efficient and friendly service from first contact to fitting. Great price, they fit great and look
+                great. We are well happy.”
+              </blockquote>
+              <cite>John Dooley</cite>
+            </article>
+
+            <article class="review-extra">
+              <div class="stars" aria-label="5 star review">★★★★★</div>
+              <blockquote>
+                “Excellent service and a brilliant job. Good quality products, cleans up after himself, and any problems
+                are fixed without asking.”
+              </blockquote>
+              <cite>Craig Robinson</cite>
+            </article>
+
+            <article class="review-extra">
+              <div class="stars" aria-label="5 star review">★★★★★</div>
+              <blockquote>
+                “The fitter was polite, courteous and helpful. The quality of the blinds is fantastic and the work is
+                very professional.”
+              </blockquote>
+              <cite>Peter Wilson</cite>
+            </article>
+
+            <article class="review-extra">
+              <div class="stars" aria-label="5 star review">★★★★★</div>
+              <blockquote>
+                “Brilliant work by Brendan and his staff. An absolute 10/10 service and the blinds look amazing. I would
+                100% recommend Hull Blinds.”
+              </blockquote>
+              <cite>Dominic Temperton</cite>
+            </article>
+
+            <article class="review-extra">
+              <div class="stars" aria-label="5 star review">★★★★★</div>
+              <blockquote>
+                “Absolutely recommend Hull Blinds. Great quality and very professional. Five stars from me.”
+              </blockquote>
+              <cite>Andy Thompson</cite>
+            </article>
+
+            <article class="review-extra">
+              <div class="stars" aria-label="5 star review">★★★★★</div>
+              <blockquote>
+                “Hull Blinds were recommended to us by a friend. We love our wooden Venetian blinds.”
+              </blockquote>
+              <cite>Helen Larter</cite>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="locations-section" aria-label="Locations Hull Blinds covers">
+        <div class="locations-inner">
+          <h2>Locations We Cover</h2>
+          <p>Hull Blinds serves homes and businesses across Hull, East Yorkshire and surrounding areas.</p>
+          <div class="locations-grid">
+            <a class="location-card" href="#"><strong>Beverley</strong><span>HU17</span></a>
+            <a class="location-card" href="#"><strong>Withernsea</strong><span>HU19</span></a>
+            <a class="location-card" href="#"><strong>Hornsea</strong><span>HU18</span></a>
+            <a class="location-card" href="#"><strong>Bridlington</strong><span>YO15 / YO16</span></a>
+            <a class="location-card" href="#"><strong>Driffield</strong><span>YO25</span></a>
+            <a class="location-card" href="#"><strong>Malton</strong><span>YO17</span></a>
+            <a class="location-card" href="#"><strong>Scunthorpe</strong><span>DN15 / DN16 / DN17</span></a>
+            <a class="location-card" href="#"><strong>Stamford Bridge</strong><span>YO41</span></a>
+            <a class="location-card" href="#"><strong>Scarborough</strong><span>YO11 / YO12 / YO13</span></a>
+            <a class="location-card" href="#"><strong>Filey</strong><span>YO14</span></a>
+            <a class="location-card" href="#"><strong>Brigg</strong><span>DN20</span></a>
+            <a class="location-card" href="#"><strong>Pocklington</strong><span>YO42</span></a>
+            <a class="location-card" href="#"><strong>York</strong><span>YO1 / YO10 / YO24</span></a>
+            <a class="location-card" href="#"><strong>Selby</strong><span>YO8</span></a>
+            <a class="location-card" href="#"><strong>Goole</strong><span>DN14</span></a>
+            <a class="location-card" href="#"><strong>Thorne</strong><span>DN8</span></a>
+            <a class="location-card" href="#"><strong>Barton upon Humber</strong><span>DN18</span></a>
+            <a class="location-card" href="#"><strong>Grimsby</strong><span>DN31 / DN32 / DN33 / DN34 / DN37</span></a>
+            <a class="location-card" href="#"><strong>Immingham</strong><span>DN40</span></a>
+            <a class="location-card" href="#"><strong>Market Weighton</strong><span>YO43</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section" aria-label="Frequently asked questions">
+        <div class="faq-inner">
+          <div class="faq-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Helpful answers about our free visits, measuring, fitting and made-to-measure blinds service.</p>
+          </div>
+
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>Do you offer free home visits?</summary>
+              <p>Yes. Hull Blinds offers free home and business visits across Hull, East Yorkshire and nearby areas.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Do you measure and fit the blinds?</summary>
+              <p>Yes. We provide a measuring and fitting service so your blinds are made to measure and installed properly.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>How long does fitting usually take?</summary>
+              <p>Timescales depend on the blind type and fabric availability, but many jobs can be measured, ordered and fitted quickly once everything is confirmed.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>What types of blinds do you supply?</summary>
+              <p>We supply and fit Venetian blinds, roller blinds, Roman blinds, vertical blinds, Perfect Fit blinds, shutters, curtains and more.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Can you help me choose the right blinds?</summary>
+              <p>Yes. We can bring advice, explain the options and help you choose the best style, fabric and finish for your home or business.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Do you fit blinds for businesses?</summary>
+              <p>Yes. We work with homes and commercial spaces, including offices, rental properties, shops and other local businesses.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Are your quotes no obligation?</summary>
+              <p>Yes. Our quotations are free and no obligation, so you can understand your options and prices before making a decision.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>What areas do you cover?</summary>
+              <p>We cover Hull, East Riding and surrounding locations including Beverley, Cottingham, Hessle, Anlaby, Willerby, Driffield, Bridlington, York and nearby areas.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" aria-label="Contact Hull Blinds">
+        <div class="contact-inner">
+          <div class="contact-details">
+            <h2>Contact Us</h2>
+            <p>
+              Ready to arrange your free quote? Get in touch with Hull Blinds and we will help you choose the right
+              blinds, curtains or shutters for your home or business.
+            </p>
+            <div class="contact-methods">
+              <a class="contact-method" href="tel:01482236734">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5.8 3.8h2.8l1.7 4.2-1.7 1.7a15.3 15.3 0 0 0 5.8 5.8l1.7-1.7 4.2 1.7v2.8c0 .9-.7 1.6-1.6 1.6C10.8 20 4 13.2 4 5.4c0-.9.7-1.6 1.8-1.6z"></path>
+                </svg>
+                01482 236734
+              </a>
+              <a class="contact-method" href="mailto:shop@hullblinds.co.uk">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 6.5h16v11H4z"></path>
+                  <path d="m4 7 8 6 8-6"></path>
+                </svg>
+                shop@hullblinds.co.uk
+              </a>
+              <div class="opening-times">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="8.5"></circle>
+                  <path d="M12 7.5v5l3.2 2"></path>
+                </svg>
+                Monday - Sunday: 8:00 AM - 10:00 PM
+              </div>
+              <div class="opening-times">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 21s6-5.6 6-10A6 6 0 0 0 6 11c0 4.4 6 10 6 10z"></path>
+                  <circle cx="12" cy="11" r="2.2"></circle>
+                </svg>
+                Kingston Upon Hull
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap">
+            <form class="contact-form">
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" />
+              </label>
+              <label>
+                Phone Number
+                <input type="tel" name="phone" placeholder="Your phone number" />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="Your email address" />
+              </label>
+              <label>
+                Message
+                <textarea name="message" placeholder="Tell us what you need"></textarea>
+              </label>
+              <button type="submit">Send Enquiry</button>
+            </form>
+
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer" aria-label="Hull Blinds footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a class="brand" href="#">
+            <span class="brand-mark" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <span class="brand-name">Hull<br />Blinds</span>
+          </a>
+          <p>
+            Local blinds specialists supplying and fitting quality blinds, curtains and shutters across Hull,
+            East Yorkshire and surrounding areas.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Our Blinds</h3>
+          <ul class="footer-links">
+            <li><a href="#">Venetian Blinds</a></li>
+            <li><a href="#">Roller Blinds</a></li>
+            <li><a href="#">Roman Blinds</a></li>
+            <li><a href="#">Vertical Blinds</a></li>
+            <li><a href="#">Perfect Fit Blinds</a></li>
+            <li><a href="#">Shutters</a></li>
+          </ul>
+          <a class="footer-view-all" href="#">View All Blinds</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Areas We Cover</h3>
+          <ul class="footer-links">
+            <li><a href="#">Hull</a></li>
+            <li><a href="#">Beverley</a></li>
+            <li><a href="#">Cottingham</a></li>
+            <li><a href="#">Hessle</a></li>
+            <li><a href="#">Anlaby</a></li>
+            <li><a href="#">Willerby</a></li>
+          </ul>
+          <a class="footer-view-all" href="#">View All Areas</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul class="footer-contact">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5.8 3.8h2.8l1.7 4.2-1.7 1.7a15.3 15.3 0 0 0 5.8 5.8l1.7-1.7 4.2 1.7v2.8c0 .9-.7 1.6-1.6 1.6C10.8 20 4 13.2 4 5.4c0-.9.7-1.6 1.8-1.6z"></path>
+              </svg>
+              <a href="tel:01482236734">01482 236734</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6.5h16v11H4z"></path>
+                <path d="m4 7 8 6 8-6"></path>
+              </svg>
+              <a href="mailto:shop@hullblinds.co.uk">shop@hullblinds.co.uk</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="8.5"></circle>
+                <path d="M12 7.5v5l3.2 2"></path>
+              </svg>
+              <span>Monday - Sunday: 8:00 AM - 10:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        Web Design by <a href="#">Alpha Web Design Hull</a> | SEO By <a href="#">Owen SEO</a>
+      </div>
+    </footer>
+
     <script>
+      const siteNav = document.querySelector(".site-nav");
+      const menuToggle = document.querySelector(".mobile-menu-toggle");
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = siteNav.classList.toggle("menu-open");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+      });
+
       const blindContent = {
         venetian: {
           title: "Venetian Blinds",
@@ -1075,6 +2367,78 @@
           image.setAttribute("aria-label", `${selected.title} fitted in a room`);
         });
       });
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you offer free home visits?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Hull Blinds offers free home and business visits across Hull, East Yorkshire and nearby areas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you measure and fit the blinds?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We provide a measuring and fitting service so your blinds are made to measure and installed properly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does fitting usually take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Timescales depend on the blind type and fabric availability, but many jobs can be measured, ordered and fitted quickly once everything is confirmed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What types of blinds do you supply?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We supply and fit Venetian blinds, roller blinds, Roman blinds, vertical blinds, Perfect Fit blinds, shutters, curtains and more."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you help me choose the right blinds?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We can bring advice, explain the options and help you choose the best style, fabric and finish for your home or business."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you fit blinds for businesses?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We work with homes and commercial spaces, including offices, rental properties, shops and other local businesses."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are your quotes no obligation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Our quotations are free and no obligation, so you can understand your options and prices before making a decision."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What areas do you cover?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We cover Hull, East Riding and surrounding locations including Beverley, Cottingham, Hessle, Anlaby, Willerby, Driffield, Bridlington, York and nearby areas."
+            }
+          }
+        ]
+      }
     </script>
   </body>
 </html>

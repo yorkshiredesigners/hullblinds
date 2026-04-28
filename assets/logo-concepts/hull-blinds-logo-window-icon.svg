@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" role="img" aria-labelledby="title desc">
+  <title id="title">Hull Blinds Window Icon Logo</title>
+  <desc id="desc">Hull Blinds logo with a blue window blind icon and dark wordmark.</desc>
+  <rect width="900" height="330" fill="none"/>
+  <g transform="translate(70 54)">
+    <g fill="none" stroke="#0384F1" stroke-width="12" stroke-linecap="square" stroke-linejoin="miter">
+      <rect x="10" y="10" width="138" height="174"/>
+      <path d="M79 10v174"/>
+      <path d="M10 46h138"/>
+      <path d="M10 82h138"/>
+      <path d="M10 118h138"/>
+      <path d="M10 154h138"/>
+      <path d="M162 22v132"/>
+      <path d="M162 154l-14 22"/>
+      <path d="M162 154l14 22"/>
+    </g>
+    <text x="210" y="88" fill="#303030" font-family="Montserrat, Arial, sans-serif" font-size="76" font-weight="800" letter-spacing="-2">Hull</text>
+    <text x="210" y="168" fill="#303030" font-family="Montserrat, Arial, sans-serif" font-size="76" font-weight="800" letter-spacing="-2">Blinds</text>
+  </g>
+</svg>

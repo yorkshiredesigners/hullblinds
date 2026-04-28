@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" role="img" aria-labelledby="title desc">
+  <title id="title">Hull Blinds Current Style Blind Icon Logo</title>
+  <desc id="desc">Hull Blinds logo using the existing blue bar mark with subtle blind cord details.</desc>
+  <rect width="900" height="330" fill="none"/>
+  <g transform="translate(70 63)">
+    <g fill="#0384F1">
+      <rect x="0" y="0" width="132" height="20"/>
+      <rect x="0" y="38" width="103" height="20"/>
+      <rect x="0" y="76" width="122" height="20"/>
+      <rect x="0" y="114" width="83" height="20"/>
+    </g>
+    <g fill="none" stroke="#0384F1" stroke-width="8" stroke-linecap="square">
+      <path d="M148 0v134"/>
+      <path d="M148 134l-12 18"/>
+      <path d="M148 134l12 18"/>
+    </g>
+    <text x="190" y="72" fill="#303030" font-family="Montserrat, Arial, sans-serif" font-size="70" font-weight="800" letter-spacing="-2">Hull</text>
+    <text x="190" y="145" fill="#303030" font-family="Montserrat, Arial, sans-serif" font-size="70" font-weight="800" letter-spacing="-2">Blinds</text>
+  </g>
+</svg>
