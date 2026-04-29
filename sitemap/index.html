@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitemap | Hull Blinds</title>
+    <meta name="description" content="Sitemap page for Hull Blinds, including service details, local coverage and contact information." />
+    <link rel="canonical" href="/sitemap" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/hull-blinds-logo-social.png" />
+    <link rel="apple-touch-icon" href="../assets/hull-blinds-logo-social.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --blue: #0384f1;
+        --blue-dark: #0269bf;
+        --dark: #303030;
+        --ink: #3f4145;
+        --muted: #5b6575;
+        --line: #e4e7eb;
+        --bg: #ffffff;
+        --white: #fff;
+      }
+      * { box-sizing: border-box; }
+      body { margin:0; font-family:"Nunito Sans",sans-serif; color:var(--ink); background:var(--bg); }
+      .utility {
+        background: var(--blue);
+        color: var(--white);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+      .utility-inner,
+      .nav-inner,
+      .section-inner,
+      .footer-inner {
+        width: min(1180px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+      .utility-inner {
+        min-height: 44px;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        gap: 20px;
+      }
+      .utility-tagline { color: var(--white); font-weight: 800; text-align: center; white-space: nowrap; }
+      .utility a { color: var(--white); text-decoration: none; }
+      .utility-contact { display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
+      .utility-pill { padding: 6px 11px; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.25); }
+      .site-nav { position: relative; background: var(--white); border-bottom: 1px solid var(--line); }
+      .nav-inner {
+        min-height: 82px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 28px;
+      }
+      .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+      .brand-mark { width: 54px; height: 42px; display: grid; gap: 5px; }
+      .brand-mark span { display: block; background: var(--blue); }
+      .brand-mark span:nth-child(1) { width: 54px; height: 8px; }
+      .brand-mark span:nth-child(2) { width: 42px; height: 8px; }
+      .brand-mark span:nth-child(3) { width: 50px; height: 8px; }
+      .brand-mark span:nth-child(4) { width: 34px; height: 8px; }
+      .brand-name { color: var(--dark); font-family: "Montserrat",sans-serif; font-size: 24px; font-weight: 800; line-height: 1; }
+      .menu { display: flex; align-items: center; gap: 28px; font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+      .menu a { color: var(--ink); text-decoration: none; display: flex; align-items: center; padding: 30px 0; }
+      .menu a.active { color: var(--blue); border-bottom: 3px solid var(--blue); }
+      .menu .nav-call { padding: 12px 16px; background: var(--blue); color: var(--white); border: 2px solid var(--blue); }
+      .mobile-menu-toggle {
+        display: none;
+        width: 52px;
+        height: 46px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6px;
+        border: 0;
+        background: var(--blue);
+        cursor: pointer;
+      }
+      .mobile-menu-toggle span {
+        width: 25px;
+        height: 3px;
+        background: var(--white);
+      }
+      .hero { background: linear-gradient(100deg, var(--blue-dark) 0%, var(--blue) 60%, #3fa0f8 100%); color:var(--white); padding: 54px 20px 58px; }
+      .inner { width:min(1220px,100%); margin:0 auto; }
+      .hero h1 { margin:0; font-family:"Montserrat",sans-serif; font-size:50px; text-transform:uppercase; letter-spacing:.05em; }
+      .hero p { margin:14px 0 0; max-width:760px; color:#d6e6fb; font-size:20px; line-height:1.5; }
+      .crumbs { background:#dde5ee; border-top:1px solid #ccd7e2; border-bottom:1px solid #ccd7e2; }
+      .crumbs .inner { min-height:48px; display:flex; align-items:center; gap:10px; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; }
+      .crumbs a { color:var(--blue-dark); text-decoration:none; }
+      .section { padding:56px 20px; }
+      .section h2 { margin:0; font-family:"Montserrat",sans-serif; font-size:38px; letter-spacing:.04em; text-transform:uppercase; color:#1d2736; }
+      .section > .inner > p { margin:12px 0 0; color:var(--muted); font-size:18px; }
+      .stats { margin-top:34px; display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:16px; }
+      .stat { background:linear-gradient(95deg,var(--blue-dark),var(--blue)); color:var(--white); padding:18px; border:1px solid #0f5fa8; min-height:104px; display:grid; align-content:center; }
+      .stat strong { font-family:"Montserrat",sans-serif; font-size:42px; line-height:1; }
+      .stat span { margin-top:8px; font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.08em; color:#ccdef5; }
+      .map-grid { margin-top:30px; display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+      .map-card { background:linear-gradient(160deg,#0d6dca,#0384f1); border:1px solid #0f5fa8; padding:16px; }
+      .map-card h3 { margin:0 0 12px; color:var(--white); font-family:"Montserrat",sans-serif; font-size:29px; text-transform:uppercase; letter-spacing:.04em; }
+      .map-list { display:grid; gap:10px; }
+      .map-pill { display:block; background:var(--white); color:#1f3a56; text-decoration:none; padding:10px 12px; font-size:14px; font-weight:800; text-transform:uppercase; letter-spacing:.05em; border:1px solid #bdd7ee; }
+      .coverage { margin-top:24px; background:linear-gradient(160deg,#0d6dca,#0384f1); border:1px solid #0f5fa8; padding:16px; }
+      .coverage h3 { margin:0 0 12px; color:var(--white); font-family:"Montserrat",sans-serif; font-size:29px; text-transform:uppercase; }
+      .coverage-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; }
+      .back-home { margin-top:26px; display:inline-flex; min-height:44px; padding:11px 16px; align-items:center; text-decoration:none; border:2px solid var(--blue); background:var(--blue); color:#fff; font-weight:800; text-transform:uppercase; letter-spacing:.06em; font-size:13px; }
+      .site-footer {
+        background: var(--white);
+        color: var(--ink);
+        border-top: 1px solid var(--line);
+      }
+      .footer-inner {
+        width: min(1180px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 58px 0 48px;
+        display: grid;
+        grid-template-columns: 1.3fr 1fr 1fr 1.15fr;
+        gap: 34px;
+      }
+      .footer-brand {
+        max-width: 310px;
+      }
+      .footer-brand .brand {
+        display: inline-flex;
+      }
+      .footer-brand p {
+        margin: 20px 0 0;
+        color: #555a60;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.6;
+      }
+      .footer-col h3 {
+        margin: 0 0 18px;
+        color: var(--blue);
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .footer-links,
+      .footer-contact {
+        display: grid;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .footer-links a,
+      .footer-contact a,
+      .footer-contact span {
+        color: #44484e;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .footer-links a:hover,
+      .footer-contact a:hover {
+        color: var(--blue);
+      }
+      .footer-view-all {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 18px;
+        min-height: 40px;
+        padding: 10px 16px;
+        background: var(--blue);
+        color: var(--white);
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      .footer-view-all:hover {
+        background: var(--blue-dark);
+        color: var(--white);
+      }
+      .footer-contact li {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .footer-contact svg {
+        width: 19px;
+        height: 19px;
+        margin-top: 2px;
+        stroke: var(--blue);
+        stroke-width: 2;
+        fill: none;
+        flex-shrink: 0;
+      }
+      .footer-bottom {
+        background: var(--blue);
+        padding: 14px 20px;
+        color: var(--white);
+        text-align: center;
+        font-size: 14px;
+        font-weight: 800;
+      }
+      .footer-bottom a {
+        color: var(--white);
+        text-decoration: none;
+      }
+      @media (max-width:1020px) {
+        .hero h1 { font-size:38px; }
+        .stats { grid-template-columns:repeat(2,minmax(0,1fr)); }
+        .map-grid { grid-template-columns:1fr; }
+        .coverage-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+        .footer-inner { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      }
+      @media (max-width:640px) {
+        .hero { padding:42px 16px 46px; }
+        .hero h1 { font-size:30px; }
+        .hero p { font-size:16px; }
+        .section { padding:42px 12px; }
+        .section h2 { font-size:30px; }
+        .stats { grid-template-columns:1fr; gap:10px; }
+        .coverage-grid { grid-template-columns:1fr; }
+        .utility-inner { grid-template-columns: 1fr; justify-items: center; text-align: center; padding: 8px 0; }
+        .menu { display: none; }
+        .site-nav.menu-open .menu {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          gap: 0;
+          background: var(--white);
+          border-bottom: 1px solid var(--line);
+          z-index: 40;
+        }
+        .site-nav.menu-open .menu a {
+          padding: 14px 20px;
+          border-top: 1px solid var(--line);
+        }
+        .site-nav.menu-open .menu .nav-call {
+          margin: 12px 20px;
+          text-align: center;
+          justify-content: center;
+        }
+        .mobile-menu-toggle { display: inline-flex; }
+        .utility-contact { justify-content: center; }
+        .nav-inner { min-height: 70px; }
+        .footer-inner {
+          grid-template-columns: 1fr;
+          padding: 44px 0 38px;
+        }
+        .footer-brand {
+          max-width: none;
+        }
+        .footer-bottom {
+          font-size: 13px;
+          line-height: 1.5;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="utility">
+      <div class="utility-inner">
+        <span>Open Mon-Sun 8:00 AM - 10:00 PM</span>
+        <span class="utility-tagline">Blinds Specialists Hull &amp; East Yorkshire</span>
+        <span class="utility-contact">
+          <a class="utility-pill" href="tel:01482236734">01482 236734</a>
+        </span>
+      </div>
+    </header>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a class="brand" href="../">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          <span class="brand-name">Hull<br />Blinds</span>
+        </a>
+        <button class="mobile-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="menu">
+          <a href="../venetian-blinds">Venetian Blinds</a>
+          <a href="../roller-blinds">Roller Blinds</a>
+          <a href="../roman-blinds">Roman Blinds</a>
+          <a href="../vertical-blinds">Vertical Blinds</a>
+          <a href="../shutters">Shutters</a>
+          <a href="../perfect-fit-blinds">Perfect Fit Blinds</a>
+          <a class="nav-call" href="../contact-us">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="inner">
+        <h1>Sitemap</h1>
+        <p>Browse every Hull Blinds page including service pages, area pages, and dedicated service-in-location pages.</p>
+      </div>
+    </header>
+
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <div class="inner"><a href="../index">Home</a> / <span>Sitemap</span></div>
+    </nav>
+
+    <section class="section" aria-label="Website sitemap overview">
+      <div class="inner">
+        <h2>Website Sitemap</h2>
+        <p>This customer sitemap helps you jump straight to the right blind service or area page.</p>
+
+        <div class="stats">
+          <article class="stat"><strong>232</strong><span>Total Pages</span></article>
+          <article class="stat"><strong>10</strong><span>Service Pages</span></article>
+          <article class="stat"><strong>20</strong><span>Location Pages</span></article>
+          <article class="stat"><strong>200</strong><span>Service + Location</span></article>
+          <article class="stat"><strong>2</strong><span>Core Pages</span></article>
+        </div>
+
+        <div class="map-grid">
+          <article class="map-card">
+            <h3>Main Pages</h3>
+            <div class="map-list">
+              <a class="map-pill" href="../index">Home</a>
+<a class="map-pill" href="../sitemap">Sitemap</a>
+<a class="map-pill" href="../wooden-blinds">Wooden Blinds</a>
+<a class="map-pill" href="../roller-blinds">Roller Blinds</a>
+<a class="map-pill" href="../roman-blinds">Roman Blinds</a>
+<a class="map-pill" href="../perfect-fit-blinds">Perfect Fit Blinds</a>
+<a class="map-pill" href="../vertical-blinds">Vertical Blinds</a>
+<a class="map-pill" href="../venetian-blinds">Venetian Blinds</a>
+<a class="map-pill" href="../shutters">Shutters</a>
+<a class="map-pill" href="../motorised-blinds">Motorised Blinds</a>
+<a class="map-pill" href="../day-night-blinds">Day & Night Blinds</a>
+<a class="map-pill" href="../curtains">Curtains</a>
+<a class="map-pill" href="../blinds-beverley">Blinds Beverley</a>
+<a class="map-pill" href="../blinds-withernsea">Blinds Withernsea</a>
+<a class="map-pill" href="../blinds-hornsea">Blinds Hornsea</a>
+<a class="map-pill" href="../blinds-bridlington">Blinds Bridlington</a>
+<a class="map-pill" href="../blinds-driffield">Blinds Driffield</a>
+<a class="map-pill" href="../blinds-malton">Blinds Malton</a>
+<a class="map-pill" href="../blinds-scunthorpe">Blinds Scunthorpe</a>
+<a class="map-pill" href="../blinds-stamford-bridge">Blinds Stamford Bridge</a>
+<a class="map-pill" href="../blinds-scarborough">Blinds Scarborough</a>
+<a class="map-pill" href="../blinds-filey">Blinds Filey</a>
+<a class="map-pill" href="../blinds-brigg">Blinds Brigg</a>
+<a class="map-pill" href="../blinds-pocklington">Blinds Pocklington</a>
+<a class="map-pill" href="../blinds-york">Blinds York</a>
+<a class="map-pill" href="../blinds-selby">Blinds Selby</a>
+<a class="map-pill" href="../blinds-goole">Blinds Goole</a>
+<a class="map-pill" href="../blinds-thorne">Blinds Thorne</a>
+<a class="map-pill" href="../blinds-barton-upon-humber">Blinds Barton upon Humber</a>
+<a class="map-pill" href="../blinds-grimsby">Blinds Grimsby</a>
+<a class="map-pill" href="../blinds-immingham">Blinds Immingham</a>
+<a class="map-pill" href="../blinds-market-weighton">Blinds Market Weighton</a>
+            </div>
+          </article>
+
+          <article class="map-card">
+            <h3>Service Pages</h3>
+            <div class="map-list">
+              <a class="map-pill" href="../wooden-blinds">Wooden Blinds</a>
+<a class="map-pill" href="../roller-blinds">Roller Blinds</a>
+<a class="map-pill" href="../roman-blinds">Roman Blinds</a>
+<a class="map-pill" href="../perfect-fit-blinds">Perfect Fit Blinds</a>
+<a class="map-pill" href="../vertical-blinds">Vertical Blinds</a>
+<a class="map-pill" href="../venetian-blinds">Venetian Blinds</a>
+<a class="map-pill" href="../shutters">Shutters</a>
+<a class="map-pill" href="../motorised-blinds">Motorised Blinds</a>
+<a class="map-pill" href="../day-night-blinds">Day & Night Blinds</a>
+<a class="map-pill" href="../curtains">Curtains</a>
+            </div>
+          </article>
+
+          <article class="map-card">
+            <h3>Location Pages</h3>
+            <div class="map-list">
+              <a class="map-pill" href="../blinds-beverley">Blinds Beverley</a>
+<a class="map-pill" href="../blinds-withernsea">Blinds Withernsea</a>
+<a class="map-pill" href="../blinds-hornsea">Blinds Hornsea</a>
+<a class="map-pill" href="../blinds-bridlington">Blinds Bridlington</a>
+<a class="map-pill" href="../blinds-driffield">Blinds Driffield</a>
+<a class="map-pill" href="../blinds-malton">Blinds Malton</a>
+<a class="map-pill" href="../blinds-scunthorpe">Blinds Scunthorpe</a>
+<a class="map-pill" href="../blinds-stamford-bridge">Blinds Stamford Bridge</a>
+<a class="map-pill" href="../blinds-scarborough">Blinds Scarborough</a>
+<a class="map-pill" href="../blinds-filey">Blinds Filey</a>
+<a class="map-pill" href="../blinds-brigg">Blinds Brigg</a>
+<a class="map-pill" href="../blinds-pocklington">Blinds Pocklington</a>
+<a class="map-pill" href="../blinds-york">Blinds York</a>
+<a class="map-pill" href="../blinds-selby">Blinds Selby</a>
+<a class="map-pill" href="../blinds-goole">Blinds Goole</a>
+<a class="map-pill" href="../blinds-thorne">Blinds Thorne</a>
+<a class="map-pill" href="../blinds-barton-upon-humber">Blinds Barton upon Humber</a>
+<a class="map-pill" href="../blinds-grimsby">Blinds Grimsby</a>
+<a class="map-pill" href="../blinds-immingham">Blinds Immingham</a>
+<a class="map-pill" href="../blinds-market-weighton">Blinds Market Weighton</a>
+            </div>
+          </article>
+
+          <article class="map-card">
+            <h3>Useful Links</h3>
+            <div class="map-list">
+              <a class="map-pill" href="../index">Home</a>
+              <a class="map-pill" href="../wooden-blinds">Wooden Blinds</a>
+              <a class="map-pill" href="../blinds-market-weighton">Blinds Market Weighton</a>
+              <a class="map-pill" href="../shutters-beverley">Shutters Beverley</a>
+              <a class="map-pill" href="../perfect-fit-blinds-pocklington">Perfect Fit Blinds Pocklington</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="coverage">
+          <h3>All Service + Location Pages</h3>
+          <div class="coverage-grid">
+            <a class="map-pill" href="../wooden-blinds-beverley">Wooden Blinds Beverley</a>
+<a class="map-pill" href="../wooden-blinds-withernsea">Wooden Blinds Withernsea</a>
+<a class="map-pill" href="../wooden-blinds-hornsea">Wooden Blinds Hornsea</a>
+<a class="map-pill" href="../wooden-blinds-bridlington">Wooden Blinds Bridlington</a>
+<a class="map-pill" href="../wooden-blinds-driffield">Wooden Blinds Driffield</a>
+<a class="map-pill" href="../wooden-blinds-malton">Wooden Blinds Malton</a>
+<a class="map-pill" href="../wooden-blinds-scunthorpe">Wooden Blinds Scunthorpe</a>
+<a class="map-pill" href="../wooden-blinds-stamford-bridge">Wooden Blinds Stamford Bridge</a>
+<a class="map-pill" href="../wooden-blinds-scarborough">Wooden Blinds Scarborough</a>
+<a class="map-pill" href="../wooden-blinds-filey">Wooden Blinds Filey</a>
+<a class="map-pill" href="../wooden-blinds-brigg">Wooden Blinds Brigg</a>
+<a class="map-pill" href="../wooden-blinds-pocklington">Wooden Blinds Pocklington</a>
+<a class="map-pill" href="../wooden-blinds-york">Wooden Blinds York</a>
+<a class="map-pill" href="../wooden-blinds-selby">Wooden Blinds Selby</a>
+<a class="map-pill" href="../wooden-blinds-goole">Wooden Blinds Goole</a>
+<a class="map-pill" href="../wooden-blinds-thorne">Wooden Blinds Thorne</a>
+<a class="map-pill" href="../wooden-blinds-barton-upon-humber">Wooden Blinds Barton upon Humber</a>
+<a class="map-pill" href="../wooden-blinds-grimsby">Wooden Blinds Grimsby</a>
+<a class="map-pill" href="../wooden-blinds-immingham">Wooden Blinds Immingham</a>
+<a class="map-pill" href="../wooden-blinds-market-weighton">Wooden Blinds Market Weighton</a>
+<a class="map-pill" href="../roller-blinds-beverley">Roller Blinds Beverley</a>
+<a class="map-pill" href="../roller-blinds-withernsea">Roller Blinds Withernsea</a>
+<a class="map-pill" href="../roller-blinds-hornsea">Roller Blinds Hornsea</a>
+<a class="map-pill" href="../roller-blinds-bridlington">Roller Blinds Bridlington</a>
+<a class="map-pill" href="../roller-blinds-driffield">Roller Blinds Driffield</a>
+<a class="map-pill" href="../roller-blinds-malton">Roller Blinds Malton</a>
+<a class="map-pill" href="../roller-blinds-scunthorpe">Roller Blinds Scunthorpe</a>
+<a class="map-pill" href="../roller-blinds-stamford-bridge">Roller Blinds Stamford Bridge</a>
+<a class="map-pill" href="../roller-blinds-scarborough">Roller Blinds Scarborough</a>
+<a class="map-pill" href="../roller-blinds-filey">Roller Blinds Filey</a>
+<a class="map-pill" href="../roller-blinds-brigg">Roller Blinds Brigg</a>
+<a class="map-pill" href="../roller-blinds-pocklington">Roller Blinds Pocklington</a>
+<a class="map-pill" href="../roller-blinds-york">Roller Blinds York</a>
+<a class="map-pill" href="../roller-blinds-selby">Roller Blinds Selby</a>
+<a class="map-pill" href="../roller-blinds-goole">Roller Blinds Goole</a>
+<a class="map-pill" href="../roller-blinds-thorne">Roller Blinds Thorne</a>
+<a class="map-pill" href="../roller-blinds-barton-upon-humber">Roller Blinds Barton upon Humber</a>
+<a class="map-pill" href="../roller-blinds-grimsby">Roller Blinds Grimsby</a>
+<a class="map-pill" href="../roller-blinds-immingham">Roller Blinds Immingham</a>
+<a class="map-pill" href="../roller-blinds-market-weighton">Roller Blinds Market Weighton</a>
+<a class="map-pill" href="../roman-blinds-beverley">Roman Blinds Beverley</a>
+<a class="map-pill" href="../roman-blinds-withernsea">Roman Blinds Withernsea</a>
+<a class="map-pill" href="../roman-blinds-hornsea">Roman Blinds Hornsea</a>
+<a class="map-pill" href="../roman-blinds-bridlington">Roman Blinds Bridlington</a>
+<a class="map-pill" href="../roman-blinds-driffield">Roman Blinds Driffield</a>
+<a class="map-pill" href="../roman-blinds-malton">Roman Blinds Malton</a>
+<a class="map-pill" href="../roman-blinds-scunthorpe">Roman Blinds Scunthorpe</a>
+<a class="map-pill" href="../roman-blinds-stamford-bridge">Roman Blinds Stamford Bridge</a>
+<a class="map-pill" href="../roman-blinds-scarborough">Roman Blinds Scarborough</a>
+<a class="map-pill" href="../roman-blinds-filey">Roman Blinds Filey</a>
+<a class="map-pill" href="../roman-blinds-brigg">Roman Blinds Brigg</a>
+<a class="map-pill" href="../roman-blinds-pocklington">Roman Blinds Pocklington</a>
+<a class="map-pill" href="../roman-blinds-york">Roman Blinds York</a>
+<a class="map-pill" href="../roman-blinds-selby">Roman Blinds Selby</a>
+<a class="map-pill" href="../roman-blinds-goole">Roman Blinds Goole</a>
+<a class="map-pill" href="../roman-blinds-thorne">Roman Blinds Thorne</a>
+<a class="map-pill" href="../roman-blinds-barton-upon-humber">Roman Blinds Barton upon Humber</a>
+<a class="map-pill" href="../roman-blinds-grimsby">Roman Blinds Grimsby</a>
+<a class="map-pill" href="../roman-blinds-immingham">Roman Blinds Immingham</a>
+<a class="map-pill" href="../roman-blinds-market-weighton">Roman Blinds Market Weighton</a>
+<a class="map-pill" href="../perfect-fit-blinds-beverley">Perfect Fit Blinds Beverley</a>
+<a class="map-pill" href="../perfect-fit-blinds-withernsea">Perfect Fit Blinds Withernsea</a>
+<a class="map-pill" href="../perfect-fit-blinds-hornsea">Perfect Fit Blinds Hornsea</a>
+<a class="map-pill" href="../perfect-fit-blinds-bridlington">Perfect Fit Blinds Bridlington</a>
+<a class="map-pill" href="../perfect-fit-blinds-driffield">Perfect Fit Blinds Driffield</a>
+<a class="map-pill" href="../perfect-fit-blinds-malton">Perfect Fit Blinds Malton</a>
+<a class="map-pill" href="../perfect-fit-blinds-scunthorpe">Perfect Fit Blinds Scunthorpe</a>
+<a class="map-pill" href="../perfect-fit-blinds-stamford-bridge">Perfect Fit Blinds Stamford Bridge</a>
+<a class="map-pill" href="../perfect-fit-blinds-scarborough">Perfect Fit Blinds Scarborough</a>
+<a class="map-pill" href="../perfect-fit-blinds-filey">Perfect Fit Blinds Filey</a>
+<a class="map-pill" href="../perfect-fit-blinds-brigg">Perfect Fit Blinds Brigg</a>
+<a class="map-pill" href="../perfect-fit-blinds-pocklington">Perfect Fit Blinds Pocklington</a>
+<a class="map-pill" href="../perfect-fit-blinds-york">Perfect Fit Blinds York</a>
+<a class="map-pill" href="../perfect-fit-blinds-selby">Perfect Fit Blinds Selby</a>
+<a class="map-pill" href="../perfect-fit-blinds-goole">Perfect Fit Blinds Goole</a>
+<a class="map-pill" href="../perfect-fit-blinds-thorne">Perfect Fit Blinds Thorne</a>
+<a class="map-pill" href="../perfect-fit-blinds-barton-upon-humber">Perfect Fit Blinds Barton upon Humber</a>
+<a class="map-pill" href="../perfect-fit-blinds-grimsby">Perfect Fit Blinds Grimsby</a>
+<a class="map-pill" href="../perfect-fit-blinds-immingham">Perfect Fit Blinds Immingham</a>
+<a class="map-pill" href="../perfect-fit-blinds-market-weighton">Perfect Fit Blinds Market Weighton</a>
+<a class="map-pill" href="../vertical-blinds-beverley">Vertical Blinds Beverley</a>
+<a class="map-pill" href="../vertical-blinds-withernsea">Vertical Blinds Withernsea</a>
+<a class="map-pill" href="../vertical-blinds-hornsea">Vertical Blinds Hornsea</a>
+<a class="map-pill" href="../vertical-blinds-bridlington">Vertical Blinds Bridlington</a>
+<a class="map-pill" href="../vertical-blinds-driffield">Vertical Blinds Driffield</a>
+<a class="map-pill" href="../vertical-blinds-malton">Vertical Blinds Malton</a>
+<a class="map-pill" href="../vertical-blinds-scunthorpe">Vertical Blinds Scunthorpe</a>
+<a class="map-pill" href="../vertical-blinds-stamford-bridge">Vertical Blinds Stamford Bridge</a>
+<a class="map-pill" href="../vertical-blinds-scarborough">Vertical Blinds Scarborough</a>
+<a class="map-pill" href="../vertical-blinds-filey">Vertical Blinds Filey</a>
+<a class="map-pill" href="../vertical-blinds-brigg">Vertical Blinds Brigg</a>
+<a class="map-pill" href="../vertical-blinds-pocklington">Vertical Blinds Pocklington</a>
+<a class="map-pill" href="../vertical-blinds-york">Vertical Blinds York</a>
+<a class="map-pill" href="../vertical-blinds-selby">Vertical Blinds Selby</a>
+<a class="map-pill" href="../vertical-blinds-goole">Vertical Blinds Goole</a>
+<a class="map-pill" href="../vertical-blinds-thorne">Vertical Blinds Thorne</a>
+<a class="map-pill" href="../vertical-blinds-barton-upon-humber">Vertical Blinds Barton upon Humber</a>
+<a class="map-pill" href="../vertical-blinds-grimsby">Vertical Blinds Grimsby</a>
+<a class="map-pill" href="../vertical-blinds-immingham">Vertical Blinds Immingham</a>
+<a class="map-pill" href="../vertical-blinds-market-weighton">Vertical Blinds Market Weighton</a>
+<a class="map-pill" href="../venetian-blinds-beverley">Venetian Blinds Beverley</a>
+<a class="map-pill" href="../venetian-blinds-withernsea">Venetian Blinds Withernsea</a>
+<a class="map-pill" href="../venetian-blinds-hornsea">Venetian Blinds Hornsea</a>
+<a class="map-pill" href="../venetian-blinds-bridlington">Venetian Blinds Bridlington</a>
+<a class="map-pill" href="../venetian-blinds-driffield">Venetian Blinds Driffield</a>
+<a class="map-pill" href="../venetian-blinds-malton">Venetian Blinds Malton</a>
+<a class="map-pill" href="../venetian-blinds-scunthorpe">Venetian Blinds Scunthorpe</a>
+<a class="map-pill" href="../venetian-blinds-stamford-bridge">Venetian Blinds Stamford Bridge</a>
+<a class="map-pill" href="../venetian-blinds-scarborough">Venetian Blinds Scarborough</a>
+<a class="map-pill" href="../venetian-blinds-filey">Venetian Blinds Filey</a>
+<a class="map-pill" href="../venetian-blinds-brigg">Venetian Blinds Brigg</a>
+<a class="map-pill" href="../venetian-blinds-pocklington">Venetian Blinds Pocklington</a>
+<a class="map-pill" href="../venetian-blinds-york">Venetian Blinds York</a>
+<a class="map-pill" href="../venetian-blinds-selby">Venetian Blinds Selby</a>
+<a class="map-pill" href="../venetian-blinds-goole">Venetian Blinds Goole</a>
+<a class="map-pill" href="../venetian-blinds-thorne">Venetian Blinds Thorne</a>
+<a class="map-pill" href="../venetian-blinds-barton-upon-humber">Venetian Blinds Barton upon Humber</a>
+<a class="map-pill" href="../venetian-blinds-grimsby">Venetian Blinds Grimsby</a>
+<a class="map-pill" href="../venetian-blinds-immingham">Venetian Blinds Immingham</a>
+<a class="map-pill" href="../venetian-blinds-market-weighton">Venetian Blinds Market Weighton</a>
+<a class="map-pill" href="../shutters-beverley">Shutters Beverley</a>
+<a class="map-pill" href="../shutters-withernsea">Shutters Withernsea</a>
+<a class="map-pill" href="../shutters-hornsea">Shutters Hornsea</a>
+<a class="map-pill" href="../shutters-bridlington">Shutters Bridlington</a>
+<a class="map-pill" href="../shutters-driffield">Shutters Driffield</a>
+<a class="map-pill" href="../shutters-malton">Shutters Malton</a>
+<a class="map-pill" href="../shutters-scunthorpe">Shutters Scunthorpe</a>
+<a class="map-pill" href="../shutters-stamford-bridge">Shutters Stamford Bridge</a>
+<a class="map-pill" href="../shutters-scarborough">Shutters Scarborough</a>
+<a class="map-pill" href="../shutters-filey">Shutters Filey</a>
+<a class="map-pill" href="../shutters-brigg">Shutters Brigg</a>
+<a class="map-pill" href="../shutters-pocklington">Shutters Pocklington</a>
+<a class="map-pill" href="../shutters-york">Shutters York</a>
+<a class="map-pill" href="../shutters-selby">Shutters Selby</a>
+<a class="map-pill" href="../shutters-goole">Shutters Goole</a>
+<a class="map-pill" href="../shutters-thorne">Shutters Thorne</a>
+<a class="map-pill" href="../shutters-barton-upon-humber">Shutters Barton upon Humber</a>
+<a class="map-pill" href="../shutters-grimsby">Shutters Grimsby</a>
+<a class="map-pill" href="../shutters-immingham">Shutters Immingham</a>
+<a class="map-pill" href="../shutters-market-weighton">Shutters Market Weighton</a>
+<a class="map-pill" href="../motorised-blinds-beverley">Motorised Blinds Beverley</a>
+<a class="map-pill" href="../motorised-blinds-withernsea">Motorised Blinds Withernsea</a>
+<a class="map-pill" href="../motorised-blinds-hornsea">Motorised Blinds Hornsea</a>
+<a class="map-pill" href="../motorised-blinds-bridlington">Motorised Blinds Bridlington</a>
+<a class="map-pill" href="../motorised-blinds-driffield">Motorised Blinds Driffield</a>
+<a class="map-pill" href="../motorised-blinds-malton">Motorised Blinds Malton</a>
+<a class="map-pill" href="../motorised-blinds-scunthorpe">Motorised Blinds Scunthorpe</a>
+<a class="map-pill" href="../motorised-blinds-stamford-bridge">Motorised Blinds Stamford Bridge</a>
+<a class="map-pill" href="../motorised-blinds-scarborough">Motorised Blinds Scarborough</a>
+<a class="map-pill" href="../motorised-blinds-filey">Motorised Blinds Filey</a>
+<a class="map-pill" href="../motorised-blinds-brigg">Motorised Blinds Brigg</a>
+<a class="map-pill" href="../motorised-blinds-pocklington">Motorised Blinds Pocklington</a>
+<a class="map-pill" href="../motorised-blinds-york">Motorised Blinds York</a>
+<a class="map-pill" href="../motorised-blinds-selby">Motorised Blinds Selby</a>
+<a class="map-pill" href="../motorised-blinds-goole">Motorised Blinds Goole</a>
+<a class="map-pill" href="../motorised-blinds-thorne">Motorised Blinds Thorne</a>
+<a class="map-pill" href="../motorised-blinds-barton-upon-humber">Motorised Blinds Barton upon Humber</a>
+<a class="map-pill" href="../motorised-blinds-grimsby">Motorised Blinds Grimsby</a>
+<a class="map-pill" href="../motorised-blinds-immingham">Motorised Blinds Immingham</a>
+<a class="map-pill" href="../motorised-blinds-market-weighton">Motorised Blinds Market Weighton</a>
+<a class="map-pill" href="../day-night-blinds-beverley">Day & Night Blinds Beverley</a>
+<a class="map-pill" href="../day-night-blinds-withernsea">Day & Night Blinds Withernsea</a>
+<a class="map-pill" href="../day-night-blinds-hornsea">Day & Night Blinds Hornsea</a>
+<a class="map-pill" href="../day-night-blinds-bridlington">Day & Night Blinds Bridlington</a>
+<a class="map-pill" href="../day-night-blinds-driffield">Day & Night Blinds Driffield</a>
+<a class="map-pill" href="../day-night-blinds-malton">Day & Night Blinds Malton</a>
+<a class="map-pill" href="../day-night-blinds-scunthorpe">Day & Night Blinds Scunthorpe</a>
+<a class="map-pill" href="../day-night-blinds-stamford-bridge">Day & Night Blinds Stamford Bridge</a>
+<a class="map-pill" href="../day-night-blinds-scarborough">Day & Night Blinds Scarborough</a>
+<a class="map-pill" href="../day-night-blinds-filey">Day & Night Blinds Filey</a>
+<a class="map-pill" href="../day-night-blinds-brigg">Day & Night Blinds Brigg</a>
+<a class="map-pill" href="../day-night-blinds-pocklington">Day & Night Blinds Pocklington</a>
+<a class="map-pill" href="../day-night-blinds-york">Day & Night Blinds York</a>
+<a class="map-pill" href="../day-night-blinds-selby">Day & Night Blinds Selby</a>
+<a class="map-pill" href="../day-night-blinds-goole">Day & Night Blinds Goole</a>
+<a class="map-pill" href="../day-night-blinds-thorne">Day & Night Blinds Thorne</a>
+<a class="map-pill" href="../day-night-blinds-barton-upon-humber">Day & Night Blinds Barton upon Humber</a>
+<a class="map-pill" href="../day-night-blinds-grimsby">Day & Night Blinds Grimsby</a>
+<a class="map-pill" href="../day-night-blinds-immingham">Day & Night Blinds Immingham</a>
+<a class="map-pill" href="../day-night-blinds-market-weighton">Day & Night Blinds Market Weighton</a>
+<a class="map-pill" href="../curtains-beverley">Curtains Beverley</a>
+<a class="map-pill" href="../curtains-withernsea">Curtains Withernsea</a>
+<a class="map-pill" href="../curtains-hornsea">Curtains Hornsea</a>
+<a class="map-pill" href="../curtains-bridlington">Curtains Bridlington</a>
+<a class="map-pill" href="../curtains-driffield">Curtains Driffield</a>
+<a class="map-pill" href="../curtains-malton">Curtains Malton</a>
+<a class="map-pill" href="../curtains-scunthorpe">Curtains Scunthorpe</a>
+<a class="map-pill" href="../curtains-stamford-bridge">Curtains Stamford Bridge</a>
+<a class="map-pill" href="../curtains-scarborough">Curtains Scarborough</a>
+<a class="map-pill" href="../curtains-filey">Curtains Filey</a>
+<a class="map-pill" href="../curtains-brigg">Curtains Brigg</a>
+<a class="map-pill" href="../curtains-pocklington">Curtains Pocklington</a>
+<a class="map-pill" href="../curtains-york">Curtains York</a>
+<a class="map-pill" href="../curtains-selby">Curtains Selby</a>
+<a class="map-pill" href="../curtains-goole">Curtains Goole</a>
+<a class="map-pill" href="../curtains-thorne">Curtains Thorne</a>
+<a class="map-pill" href="../curtains-barton-upon-humber">Curtains Barton upon Humber</a>
+<a class="map-pill" href="../curtains-grimsby">Curtains Grimsby</a>
+<a class="map-pill" href="../curtains-immingham">Curtains Immingham</a>
+<a class="map-pill" href="../curtains-market-weighton">Curtains Market Weighton</a>
+          </div>
+        </div>
+
+        <a class="back-home" href="../index">Back To Home</a>
+      </div>
+    </section>
+
+    <footer class="site-footer" aria-label="Hull Blinds footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a class="brand" href="../">
+            <span class="brand-mark" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <span class="brand-name">Hull<br />Blinds</span>
+          </a>
+          <p>
+            Local blinds specialists supplying and fitting quality blinds, curtains and shutters across Hull,
+            East Yorkshire and surrounding areas.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Our Blinds</h3>
+          <ul class="footer-links">
+            <li><a href="../venetian-blinds">Venetian Blinds</a></li>
+            <li><a href="../roller-blinds">Roller Blinds</a></li>
+            <li><a href="../roman-blinds">Roman Blinds</a></li>
+            <li><a href="../vertical-blinds">Vertical Blinds</a></li>
+            <li><a href="../perfect-fit-blinds">Perfect Fit Blinds</a></li>
+            <li><a href="../shutters">Shutters</a></li>
+            <li><a href="../contact-us">Contact Us</a></li>
+          </ul>
+          <a class="footer-view-all" href="../sitemap">View All Blinds</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Areas We Cover</h3>
+          <ul class="footer-links">
+            <li><a href="../">Hull</a></li>
+            <li><a href="../blinds-beverley">Beverley</a></li>
+            <li><a href="../sitemap">Cottingham</a></li>
+            <li><a href="../sitemap">Hessle</a></li>
+            <li><a href="../sitemap">Anlaby</a></li>
+            <li><a href="../sitemap">Willerby</a></li>
+            <li><a href="../sitemap">Sitemap</a></li>
+          </ul>
+          <a class="footer-view-all" href="../sitemap">View All Areas</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul class="footer-contact">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5.8 3.8h2.8l1.7 4.2-1.7 1.7a15.3 15.3 0 0 0 5.8 5.8l1.7-1.7 4.2 1.7v2.8c0 .9-.7 1.6-1.6 1.6C10.8 20 4 13.2 4 5.4c0-.9.7-1.6 1.8-1.6z"></path>
+              </svg>
+              <a href="tel:01482236734">01482 236734</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6.5h16v11H4z"></path>
+                <path d="m4 7 8 6 8-6"></path>
+              </svg>
+              <a href="mailto:shop@hullblinds.co.uk">shop@hullblinds.co.uk</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="8.5"></circle>
+                <path d="M12 7.5v5l3.2 2"></path>
+              </svg>
+              <span>Monday - Sunday: 8:00 AM - 10:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        Web Design by <a href="../">Alpha Web Design Hull</a> | SEO By <a href="../">Owen SEO</a>
+      </div>
+    </footer>
+
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Sitemap | Hull Blinds",
+      "headline": "Sitemap",
+      "description": "Customer sitemap for Hull Blinds with links to all service, location and service-location pages.",
+      "url": "/sitemap"
+}
+    </script>
+<script>
+  (() => {
+    const serviceSlugs = [
+      "venetian-blinds",
+      "roller-blinds",
+      "roman-blinds",
+      "vertical-blinds",
+      "perfect-fit-blinds",
+      "shutters",
+    ];
+    const navLinks = Array.from(document.querySelectorAll('.menu a:not(.nav-call)'));
+    if (!navLinks.length) return;
+
+    const pageSlug = (window.location.pathname.split('/').filter(Boolean).pop() || '').replace(/\.html$/, '');
+    const activeService = serviceSlugs.find((slug) => pageSlug === slug || pageSlug.startsWith(`${slug}-`));
+
+    navLinks.forEach((link) => link.classList.remove('active'));
+    if (!activeService) return;
+
+    const activeLink = navLinks.find((link) => {
+      const href = link.getAttribute('href') || '';
+      return href.endsWith(`/${activeService}`) || href === activeService || href === `../${activeService}`;
+    });
+    if (activeLink) activeLink.classList.add('active');
+  })();
+</script>
+<script>
+  const siteNav = document.querySelector(".site-nav");
+  const menuToggle = document.querySelector(".mobile-menu-toggle");
+  if (siteNav && menuToggle) {
+    menuToggle.addEventListener("click", () => {
+      const isOpen = siteNav.classList.toggle("menu-open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+    });
+  }
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Hull Blinds",
+  "url": "/",
+  "telephone": "+44 1482 236734",
+  "email": "shop@hullblinds.co.uk",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "18 Cullingworth Ave",
+    "addressLocality": "Hull",
+    "postalCode": "HU6 7DD",
+    "addressRegion": "East Yorkshire",
+    "addressCountry": "GB"
+  },
+  "areaServed": [
+    "Hull",
+    "East Yorkshire",
+    "Beverley",
+    "Withernsea",
+    "Hornsea",
+    "Bridlington",
+    "Driffield",
+    "Malton",
+    "Scunthorpe",
+    "Stamford Bridge",
+    "Scarborough",
+    "Filey",
+    "Brigg",
+    "Pocklington",
+    "York",
+    "Selby",
+    "Goole",
+    "Thorne",
+    "Barton upon Humber",
+    "Grimsby",
+    "Immingham",
+    "Market Weighton"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "08:00",
+      "closes": "22:00"
+    }
+  ],
+  "priceRange": "$$",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "bestRating": "5"
+  }
+}
+</script>
+
+<script>
+  (() => {
+    if (document.querySelector('.crumbs')) return;
+    const siteNav = document.querySelector('.site-nav');
+    if (!siteNav) return;
+
+    const h1 = document.querySelector('h1');
+    const current = (h1?.textContent || 'Page').trim();
+    const brandHome = document.querySelector('.site-nav .brand')?.getAttribute('href') || './';
+
+    const crumbs = document.createElement('nav');
+    crumbs.className = 'crumbs';
+    crumbs.setAttribute('aria-label', 'Breadcrumb');
+    crumbs.innerHTML = `
+      <div class="section-inner crumbs-inner">
+        <a href="../">Home</a>
+        <span>/</span>
+        <span>${current}</span>
+      </div>
+    `;
+
+    siteNav.insertAdjacentElement('afterend', crumbs);
+  })();
+</script>
+
+</body>
+</html>
