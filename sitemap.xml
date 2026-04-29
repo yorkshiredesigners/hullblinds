@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/curtains</loc>
+    <loc>/curtains-hull</loc>
   </url>
   <url>
     <loc>/curtains-barton-upon-humber</loc>
@@ -64,7 +64,7 @@
     <loc>/curtains-york</loc>
   </url>
   <url>
-    <loc>/day-night-blinds</loc>
+    <loc>/day-night-blinds-hull</loc>
   </url>
   <url>
     <loc>/day-night-blinds-barton-upon-humber</loc>
@@ -190,7 +190,7 @@
     <loc>/blinds-york</loc>
   </url>
   <url>
-    <loc>/motorised-blinds</loc>
+    <loc>/motorised-blinds-hull</loc>
   </url>
   <url>
     <loc>/motorised-blinds-barton-upon-humber</loc>
@@ -253,7 +253,7 @@
     <loc>/motorised-blinds-york</loc>
   </url>
   <url>
-    <loc>/perfect-fit-blinds</loc>
+    <loc>/perfect-fit-blinds-hull</loc>
   </url>
   <url>
     <loc>/perfect-fit-blinds-barton-upon-humber</loc>
@@ -316,7 +316,7 @@
     <loc>/perfect-fit-blinds-york</loc>
   </url>
   <url>
-    <loc>/roller-blinds</loc>
+    <loc>/roller-blinds-hull</loc>
   </url>
   <url>
     <loc>/roller-blinds-barton-upon-humber</loc>
@@ -379,7 +379,7 @@
     <loc>/roller-blinds-york</loc>
   </url>
   <url>
-    <loc>/roman-blinds</loc>
+    <loc>/roman-blinds-hull</loc>
   </url>
   <url>
     <loc>/roman-blinds-barton-upon-humber</loc>
@@ -442,7 +442,7 @@
     <loc>/roman-blinds-york</loc>
   </url>
   <url>
-    <loc>/shutters</loc>
+    <loc>/shutters-hull</loc>
   </url>
   <url>
     <loc>/shutters-barton-upon-humber</loc>
@@ -508,7 +508,7 @@
     <loc>/sitemap</loc>
   </url>
   <url>
-    <loc>/venetian-blinds</loc>
+    <loc>/venetian-blinds-hull</loc>
   </url>
   <url>
     <loc>/venetian-blinds-barton-upon-humber</loc>
@@ -571,7 +571,7 @@
     <loc>/venetian-blinds-york</loc>
   </url>
   <url>
-    <loc>/vertical-blinds</loc>
+    <loc>/vertical-blinds-hull</loc>
   </url>
   <url>
     <loc>/vertical-blinds-barton-upon-humber</loc>
@@ -634,7 +634,7 @@
     <loc>/vertical-blinds-york</loc>
   </url>
   <url>
-    <loc>/wooden-blinds</loc>
+    <loc>/wooden-blinds-hull</loc>
   </url>
   <url>
     <loc>/wooden-blinds-barton-upon-humber</loc>
