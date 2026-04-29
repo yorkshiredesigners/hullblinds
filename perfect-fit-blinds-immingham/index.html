@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfect Fit Blinds Immingham | Hull Blinds</title>
     <meta name="description" content="Perfect Fit Blinds Immingham page for Hull Blinds, including service details, local coverage and contact information." />
+    <meta property="og:site_name" content="Hull Blinds" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://yorkshiredesigners.github.io/hullblinds/assets/hull-blinds-logo-social.png" />
+    <meta property="og:image:alt" content="Hull Blinds logo" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://yorkshiredesigners.github.io/hullblinds/assets/hull-blinds-logo-social.png" />
     <link rel="canonical" href="/perfect-fit-blinds-immingham" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/hull-blinds-logo-social.png" />
-    <link rel="apple-touch-icon" href="../assets/hull-blinds-logo-social.png" />
+    <link rel="icon" type="image/webp" sizes="32x32" href="../assets/hull-blinds-logo-social.webp" />
+    <link rel="apple-touch-icon" href="../assets/hull-blinds-logo-social.webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -195,6 +203,48 @@
         background: var(--white);
       }
 
+
+      .mobile-call-bar {
+        display: none;
+      }
+
+      .mobile-call-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+        line-height: 1;
+      }
+
+      .mobile-call-icon svg {
+        width: 100%;
+        height: 100%;
+        fill: currentColor;
+      }
+
+      .mobile-call-copy {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        line-height: 1.12;
+      }
+
+      .mobile-call-number {
+        font-size: 18px;
+        font-weight: 800;
+      }
+
+      .mobile-call-note {
+        margin-top: 3px;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+        opacity: 0.95;
+        text-transform: none;
+      }
       .sale-banner {
         position: relative;
         overflow: hidden;
@@ -370,7 +420,7 @@
         min-height: 430px;
         background:
           linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)),
-          url("../images/perfect-fit-blinds-ai.png") center 30%/cover no-repeat;
+          url("../images/perfect-fit-blinds-ai.webp") center 30%/cover no-repeat;
       }
 
       .benefits {
@@ -553,7 +603,7 @@
         overflow: hidden;
         background:
           linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)),
-          url("../images/perfect-fit-blinds-ai.png") center/cover no-repeat;
+          url("../images/perfect-fit-blinds-ai.webp") center/cover no-repeat;
       }
 
       .quote-cta {
@@ -1523,6 +1573,9 @@
         .sale-banner-inner {
           min-height: 92px;
           gap: 18px;
+          justify-content: center;
+          flex-wrap: wrap;
+          text-align: center;
         }
 
         .blind-image::after,
@@ -1553,6 +1606,7 @@
 
         .sale-banner-cta {
           min-height: 40px;
+          margin-left: 0;
           padding: 8px 14px;
           font-size: 11px;
           letter-spacing: 0.06em;
@@ -1654,6 +1708,36 @@
 
         .benefit-grid {
           grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+
+      @media (max-width: 820px) {
+        body {
+          padding-bottom: 74px;
+        }
+
+        .mobile-call-bar {
+          position: fixed;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 120;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          min-height: 72px;
+          padding: 9px 14px;
+          background: linear-gradient(90deg, #157a24 0%, #1f9e35 100%);
+          color: #ffffff;
+          font-family: "Montserrat", sans-serif;
+          font-size: 17px;
+          font-weight: 800;
+          letter-spacing: 0.02em;
+          text-decoration: none;
+          text-transform: none;
+          box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.2);
         }
       }
 
@@ -2087,6 +2171,7 @@
           <a href="../roman-blinds">Roman Blinds</a>
           <a href="../vertical-blinds">Vertical Blinds</a>
           <a href="../shutters">Shutters</a>
+          <a href="../curtains">Curtains</a>
           <a href="../perfect-fit-blinds">Perfect Fit Blinds</a>
           <a class="nav-call" href="../contact-us">Contact Us</a>
         </div>
@@ -2224,11 +2309,11 @@
           <h2>Transform Your Property</h2>
           <p>Discover beautifully fitted shutters, blinds and curtains tailored to elevate every room in your home.</p>
           <div class="transform-gallery-grid">
-            <article class="transform-gallery-item" data-label="Shutters" style="--transform-image: url('../images/transform-shutters-ai.png')"></article>
-            <article class="transform-gallery-item" data-label="Roller Blinds" style="--transform-image: url('../images/transform-roller-ai.png')"></article>
-            <article class="transform-gallery-item" data-label="Roman Blinds" style="--transform-image: url('../images/transform-roman-ai.png')"></article>
-            <article class="transform-gallery-item" data-label="Vertical Blinds" style="--transform-image: url('../images/transform-vertical-ai.png')"></article>
-            <article class="transform-gallery-item" data-label="Curtains" style="--transform-image: url('../images/transform-curtains-ai.png')"></article>
+            <article class="transform-gallery-item" data-label="Shutters" style="--transform-image: url('../images/transform-shutters-ai.webp')"></article>
+            <article class="transform-gallery-item" data-label="Roller Blinds" style="--transform-image: url('../images/transform-roller-ai.webp')"></article>
+            <article class="transform-gallery-item" data-label="Roman Blinds" style="--transform-image: url('../images/transform-roman-ai.webp')"></article>
+            <article class="transform-gallery-item" data-label="Vertical Blinds" style="--transform-image: url('../images/transform-vertical-ai.webp')"></article>
+            <article class="transform-gallery-item" data-label="Curtains" style="--transform-image: url('../images/transform-curtains-ai.webp')"></article>
           </div>
         </div>
       </section>
@@ -2253,7 +2338,7 @@
 
         <div class="blinds-grid">
           <article class="blind-card">
-            <div class="blind-card-image" style="--card-image: url('../images/wooden-blinds-ai.png')"></div>
+            <div class="blind-card-image" style="--card-image: url('../images/wooden-blinds-ai.webp')"></div>
             <div class="blind-card-body">
               <h3>Wooden Blinds</h3>
               <p>A wide variety of quality wood venetian blinds in a range of colours and finishes.</p>
@@ -2261,7 +2346,7 @@
             </div>
           </article>
           <article class="blind-card">
-            <div class="blind-card-image" style="--card-image: url('../images/roller-blinds-ai.png')"></div>
+            <div class="blind-card-image" style="--card-image: url('../images/roller-blinds-ai.webp')"></div>
             <div class="blind-card-body">
               <h3>Roller Blinds</h3>
               <p>A range of roller blinds and blackout roller blinds to suit all situations.</p>
@@ -2269,7 +2354,7 @@
             </div>
           </article>
           <article class="blind-card">
-            <div class="blind-card-image" style="--card-image: url('../images/roman-blinds-ai.png')"></div>
+            <div class="blind-card-image" style="--card-image: url('../images/roman-blinds-ai.webp')"></div>
             <div class="blind-card-body">
               <h3>Roman Blinds</h3>
               <p>A wide range of roman blinds to meet different price and quality requirements.</p>
@@ -2277,7 +2362,7 @@
             </div>
           </article>
           <article class="blind-card">
-            <div class="blind-card-image" style="--card-image: url('../images/perfect-fit-blinds-ai.png')"></div>
+            <div class="blind-card-image" style="--card-image: url('../images/perfect-fit-blinds-ai.webp')"></div>
             <div class="blind-card-body">
               <h3>Perfect Fit Blinds</h3>
               <p>Perfect fit blinds require no drilling and are a neat option for modern windows.</p>
@@ -2285,7 +2370,7 @@
             </div>
           </article>
           <article class="blind-card">
-            <div class="blind-card-image" style="--card-image: url('../images/vertical-blinds-ai.png')"></div>
+            <div class="blind-card-image" style="--card-image: url('../images/vertical-blinds-ai.webp')"></div>
             <div class="blind-card-body">
               <h3>Vertical Blinds</h3>
               <p>Stylish vertical blinds offer a practical solution for larger windows and doors.</p>
@@ -2293,7 +2378,7 @@
             </div>
           </article>
           <article class="blind-card">
-            <div class="blind-card-image" style="--card-image: url('../images/venetian-blinds-ai.png')"></div>
+            <div class="blind-card-image" style="--card-image: url('../images/venetian-blinds-ai.webp')"></div>
             <div class="blind-card-body">
               <h3>Venetian Blinds</h3>
               <p>A comprehensive range of venetian blinds in a variety of colours and patterns.</p>
@@ -2301,7 +2386,7 @@
             </div>
           </article>
           <article class="blind-card">
-            <div class="blind-card-image" style="--card-image: url('../images/shutters-ai.png')"></div>
+            <div class="blind-card-image" style="--card-image: url('../images/shutters-ai.webp')"></div>
             <div class="blind-card-body">
               <h3>Shutters</h3>
               <p>A range of shutters to fit your specific window measurements and home style.</p>
@@ -2309,7 +2394,7 @@
             </div>
           </article>
           <article class="blind-card">
-            <div class="blind-card-image" style="--card-image: url('../images/motorised-blinds-ai.png')"></div>
+            <div class="blind-card-image" style="--card-image: url('../images/motorised-blinds-ai.webp')"></div>
             <div class="blind-card-body">
               <h3>Motorised Blinds</h3>
               <p>Quality motorised blinds supplied and fitted for convenience and comfort.</p>
@@ -2317,7 +2402,7 @@
             </div>
           </article>
           <article class="blind-card">
-            <div class="blind-card-image" style="--card-image: url('../images/day-night-blinds-ai.png')"></div>
+            <div class="blind-card-image" style="--card-image: url('../images/day-night-blinds-ai.webp')"></div>
             <div class="blind-card-body">
               <h3>Day &amp; Night Blinds</h3>
               <p>Create an impact with modern day and night blinds for flexible light control.</p>
@@ -2417,7 +2502,7 @@
             <article class="review-item">
               <div
                 class="review-photo"
-                style="--review-image: url('../images/mathew blinds review.png')"
+                style="--review-image: url('../images/mathew blinds review.webp')"
                 aria-label="Fitted blinds installed for Mathew Atkin in Immingham"
               ></div>
               <div class="review-card">
@@ -2793,35 +2878,35 @@
           description:
             "Our made-to-measure perfect fit blinds are supplied and fitted in Immingham and nearby areas with friendly expert advice.",
           features: ["Made to measure for your exact windows", "Professional local fitting service", "Wide choice of styles, colours and finishes"],
-          image: "images/perfect-fit-blinds-ai.png",
+          image: "images/perfect-fit-blinds-ai.webp",
         },
         benefits: {
           title: "Perfect Fit Blinds Benefits",
           description:
             "Perfect Fit Blinds combine practical performance with a clean finish, helping you manage light, privacy and style in every room.",
           features: ["Better light and privacy control", "Durable, practical everyday option", "Tailored to your room style"],
-          image: "images/perfect-fit-blinds-ai.png",
+          image: "images/perfect-fit-blinds-ai.webp",
         },
         styles: {
           title: "Styles & Finishes",
           description:
             "We offer a broad range of colours, textures and finish options so your perfect fit blinds match your interior perfectly.",
           features: ["Classic and modern options", "Colour and finish matching", "Suitable for homes and businesses"],
-          image: "images/perfect-fit-blinds-ai.png",
+          image: "images/perfect-fit-blinds-ai.webp",
         },
         fitting: {
           title: "Supply & Fitting",
           description:
             "From free measuring to final installation, Hull Blinds keeps the process simple, tidy and stress-free.",
           features: ["Free measuring and quotation", "Experienced fitting by local specialists", "Aftercare advice included"],
-          image: "images/perfect-fit-blinds-ai.png",
+          image: "images/perfect-fit-blinds-ai.webp",
         },
         all: {
           title: "Explore More Blind Styles",
           description:
             "We also supply and fit roller, roman, vertical, motorised blinds, shutters and curtains across the region.",
           features: ["Full made-to-measure service", "Supply and fitting included", "Free local advice"],
-          image: "images/featured-all-ai.png",
+          image: "images/featured-all-ai.webp",
         },
       };
 
@@ -3044,6 +3129,9 @@
     siteNav.insertAdjacentElement('afterend', crumbs);
   })();
 </script>
+
+
+<a class="mobile-call-bar" href="tel:01482236734" aria-label="Call Hull Blinds on 01482 236734"><span class="mobile-call-icon" aria-hidden="true"><svg viewBox="0 0 24 24" role="img" focusable="false"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.85 21 3 13.15 3 3c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.74-.24 1.02l-2.21 2.2z"/></svg></span><span class="mobile-call-number">01482 236734</span></a>
 
 </body>
 </html>
