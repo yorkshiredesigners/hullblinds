@@ -2936,22 +2936,24 @@
           </div>
 
           <div class="contact-form-wrap">
-            <form class="contact-form">
+            <form class="contact-form" action="https://formspree.io/f/xpqbdojz" method="POST">
+              <input type="hidden" name="_subject" value="New Hull Blinds enquiry" />
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display: none" />
               <label>
                 Name
-                <input type="text" name="name" placeholder="Your name" />
+                <input type="text" name="name" placeholder="Your name" required />
               </label>
               <label>
                 Phone Number
-                <input type="tel" name="phone" placeholder="Your phone number" />
+                <input type="tel" name="phone" placeholder="Your phone number" required />
               </label>
               <label>
                 Email
-                <input type="email" name="email" placeholder="Your email address" />
+                <input type="email" name="email" placeholder="Your email address" required />
               </label>
               <label>
                 Message
-                <textarea name="message" placeholder="Tell us what you need"></textarea>
+                <textarea name="message" placeholder="Tell us what you need" required></textarea>
               </label>
               <button type="submit">Send Enquiry</button>
             </form>
@@ -3053,35 +3055,35 @@
           description:
             "Our made-to-measure venetian blinds are supplied and fitted in Brigg and nearby areas with friendly expert advice.",
           features: ["Made to measure for your exact windows", "Professional local fitting service", "Wide choice of styles, colours and finishes"],
-          image: "images/venetian-blinds-ai.webp",
+          image: "/images/venetian-blinds-ai.webp",
         },
         benefits: {
           title: "Venetian Blinds Benefits",
           description:
             "Venetian Blinds combine practical performance with a clean finish, helping you manage light, privacy and style in every room.",
           features: ["Better light and privacy control", "Durable, practical everyday option", "Tailored to your room style"],
-          image: "images/venetian-blinds-ai.webp",
+          image: "/images/venetian-blinds-ai.webp",
         },
         styles: {
           title: "Styles & Finishes",
           description:
             "We offer a broad range of colours, textures and finish options so your venetian blinds match your interior perfectly.",
           features: ["Classic and modern options", "Colour and finish matching", "Suitable for homes and businesses"],
-          image: "images/venetian-blinds-ai.webp",
+          image: "/images/venetian-blinds-ai.webp",
         },
         fitting: {
           title: "Supply & Fitting",
           description:
             "From free measuring to final installation, Hull Blinds keeps the process simple, tidy and stress-free.",
           features: ["Free measuring and quotation", "Experienced fitting by local specialists", "Aftercare advice included"],
-          image: "images/venetian-blinds-ai.webp",
+          image: "/images/venetian-blinds-ai.webp",
         },
         all: {
           title: "Explore More Blind Styles",
           description:
             "We also supply and fit roller, roman, vertical, motorised blinds, shutters and curtains across the region.",
           features: ["Full made-to-measure service", "Supply and fitting included", "Free local advice"],
-          image: "images/featured-all-ai.webp",
+          image: "/images/featured-all-ai.webp",
         },
       };
 

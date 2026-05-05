@@ -2914,22 +2914,24 @@
           </div>
 
           <div class="contact-form-wrap">
-            <form class="contact-form">
+            <form class="contact-form" action="https://formspree.io/f/xpqbdojz" method="POST">
+              <input type="hidden" name="_subject" value="New Hull Blinds enquiry" />
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display: none" />
               <label>
                 Name
-                <input type="text" name="name" placeholder="Your name" />
+                <input type="text" name="name" placeholder="Your name" required />
               </label>
               <label>
                 Phone Number
-                <input type="tel" name="phone" placeholder="Your phone number" />
+                <input type="tel" name="phone" placeholder="Your phone number" required />
               </label>
               <label>
                 Email
-                <input type="email" name="email" placeholder="Your email address" />
+                <input type="email" name="email" placeholder="Your email address" required />
               </label>
               <label>
                 Message
-                <textarea name="message" placeholder="Tell us what you need"></textarea>
+                <textarea name="message" placeholder="Tell us what you need" required></textarea>
               </label>
               <button type="submit">Send Enquiry</button>
             </form>
